@@ -1,87 +1,108 @@
+/*!
+ * Hyde Theme Adapted for Chandni Naidu
+ * Based on Hyde (https://github.com/poole/hyde)
+ */
+
 /* Reset */
-* {
-  box-sizing: border-box;
+html, body, div, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* General Styles */
 body {
   font-family: Georgia, serif;
-  line-height: 1.6;
   color: #333;
   background-color: #fff;
-  margin: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: #268bd2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.sidebar {
+  background: #f7f7f7;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 30px;
+  border-right: 1px solid #eee;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 650px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
-/* Header */
-.site-header {
-  background-color: #f7f7f7;
-  padding: 1rem 0;
-  border-bottom: 1px solid #eee;
+.sidebar-sticky {
+  position: sticky;
+  top: 0;
 }
 
-.site-title {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.content {
+  margin-left: 240px;
+  padding: 40px 20px;
 }
 
-.site-title a {
-  text-decoration: none;
+.sidebar h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.sidebar p.lead {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav {
+  margin-bottom: 20px;
+}
+
+.sidebar-nav-item {
+  display: block;
   color: #333;
+  padding: 5px 0;
 }
 
-.site-nav a {
-  margin-right: 1rem;
-  text-decoration: none;
-  color: #888;
+.sidebar-nav-item.active {
+  font-weight: bold;
 }
 
-.site-nav a:hover {
-  color: #333;
+.sidebar p {
+  font-size: 12px;
+  color: #aaa;
 }
 
-/* Content */
-.content h2 {
-  margin-top: 1.5rem;
+h1, h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  margin: 40px 0 20px;
 }
 
-.content ul {
-  list-style: none;
-  margin-top: 1rem;
+h1 {
+  font-size: 32px;
 }
 
-.content ul li {
-  margin-bottom: 0.5rem;
+h2 {
+  font-size: 24px;
 }
 
-.content p {
-  margin-bottom: 1rem;
+ul {
+  margin-bottom: 20px;
+  list-style: disc;
+  padding-left: 20px;
 }
 
-.project {
-  margin-bottom: 2rem;
-}
-
-/* Footer */
-.site-footer {
-  border-top: 1px solid #eee;
-  padding: 1rem 0;
-  text-align: center;
-  font-size: 0.875rem;
-}
-
-.site-footer a {
-  color: #888;
-  text-decoration: none;
-}
-
-.site-footer a:hover {
-  color: #333;
+p {
+  margin-bottom: 20px;
 }
