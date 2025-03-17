@@ -70,6 +70,26 @@ html {
   }
 }
 
+.sidebar-profile-img {
+  display: block;
+  margin: 0 auto 1.5rem auto;       /* centers the image + spacing */
+  width: 120px;                     /* control size */
+  height: 120px;
+  border-radius: 50%;               /* makes it a circle */
+  background-color: #ffffff;        /* background color of the circle */
+  padding: 10px;                    /* optional: space around the image */
+  object-fit: cover;                /* makes sure the image fills */
+  border: 3px solid rgba(255, 255, 255, 0.7); /* optional: a border */
+}
+
+.sidebar-profile-img:hover {
+  background-color: #268bd2;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
 /* Sidebar links */
 .sidebar a {
   color: #fff;
