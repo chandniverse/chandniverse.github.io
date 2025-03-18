@@ -11,16 +11,13 @@ title: 'Chandni's Website'
 tagline: 'Technology Blog'
 description: 'Critical commentary on tech and society'
 url: 'https://chandniverse.github.io'
-baseurl: '/'
+baseurl: ''
 
 author:
   name: 'Chandni'
   url: 'https://twitter.com/chandniverse'
 
 paginate: 5
-
-# GitHub Pages specific configuration
-theme: 'jekyll-theme-primer'
 
 # Custom vars
 github:
