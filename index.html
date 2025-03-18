@@ -1,56 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Thoughtful Technologist</title>
-</head>
-<body>
-    <header>
-        <h1>The Thoughtful Technologist</h1>
-    </header>
+---
+layout: default
+title: Home
+---
 
-    <section>
-        <h2>Welcome to The Thoughtful Technologist (TTT)</h2>
-        <p>Technology is never neutral. It encodes histories, politics, and biases into the systems we interact with every day. <em>The Thoughtful Technologist</em> examines how these systems shape society, governance, and the economy—and asks how we can design better futures.</p>
-    </section>
+{% if page.url == "/" %}
 
-    <section>
-        <h3>Subscribers receive:</h3>
-        <ul>
-            <li>✅ Weekly deep dives into topics like AI policy, digital public infrastructure, feminist finance, and algorithmic governance.</li>
-            <li>✅ Sharp opinion pieces challenging the status quo of technology discourse.</li>
-            <li>✅ Theoretical explorations in digital sociology, economics, and design futures.</li>
-            <li>✅ Global perspectives connecting technology to governance, culture, and economic development.</li>
-        </ul>
-    </section>
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+    <div class="row">
 
-    <section>
-        <p>If you’re a researcher, policymaker, designer, or just someone who refuses to take technology at face value, TTT is your space to explore, critique, and build better futures.</p>
-    </section>
+    {% for post in site.posts %}
 
-    <hr>
+        {% if post.featured == true %}
 
-    <section>
-        <h3>Join the conversation. Stay thoughtful.</h3>
-    </section>
+            {% include featuredbox.html %}
 
-    <hr>
+        {% endif %}
 
-    <section>
-        <h3>People</h3>
-        <p><strong>Chandni</strong><br>
-        <a href="https://twitter.com/chandni" target="_blank">@chandni</a><br>
-        <a href="https://twitter.com/chandninaidu" target="_blank">@chandninaidu</a></p>
-        <p>🌱</p>
-    </section>
+    {% endfor %}
 
-    <footer>
-        <p>© 2025 Dialectic</p>
-        <p><a href="#">Privacy</a> ∙ <a href="#">Terms</a> ∙ <a href="#">Collection notice</a></p>
-        <p><a href="#">Start Writing</a></p>
-        <p><a href="#">Get the app</a></p>
-        <p>Substack is the home for great culture.</p>
-    </footer>
-</body>
-</html>
+    </div>
+</section>
+
+{% endif %}
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>All Stories</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% for post in paginator.posts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
+
