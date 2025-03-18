@@ -6,7 +6,7 @@ highlighter: rouge
 title: "Chandni's Website"
 description: 'Critical commentary on tech and society'
 url: 'https://chandniverse.github.io'
-baseurl: ''
+baseurl: /
 
 # Author
 author:
