@@ -57,7 +57,7 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background-color: #2c4a3a;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -77,13 +77,13 @@ html {
   height: 120px;
   border-radius: 50%;               /* makes it a circle */
   background-color: #ffffff;        /* background color of the circle */
-  padding: 10px;                    /* optional: space around the image */
+  padding: 0px;                    /* optional: space around the image */
   object-fit: cover;                /* makes sure the image fills */
   border: 3px solid rgba(255, 255, 255, 0.7); /* optional: a border */
 }
 
 .sidebar-profile-img:hover {
-  background-color: #268bd2;
+  background-color: #4f7151;
   transition: background-color 0.3s ease;
 }
 
