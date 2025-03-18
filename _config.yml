@@ -7,15 +7,15 @@ permalink: pretty
 relative_permalinks: true
 
 # Setup
-title: 'Chandni\'s Website'
-tagline: 'A personal blog powered by Jekyll'
-description: 'A Jekyll site with the Primer theme.'
+title: 'Chandni's Website'
+tagline: 'Technology Blog'
+description: 'Critical commentary on tech and society'
 url: 'https://chandniverse.github.io'
 baseurl: '/'
 
 author:
   name: 'Chandni'
-  url: 'https://twitter.com/mdo'
+  url: 'https://twitter.com/chandniverse'
 
 paginate: 5
 
