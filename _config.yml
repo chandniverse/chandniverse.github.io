@@ -1,1 +1,3 @@
-remote_theme: mediumish
+remote_theme: mediumishremote_theme: pages-themes/dinky@v0.2.0
+plugins:
+- jekyll-remote-theme 
