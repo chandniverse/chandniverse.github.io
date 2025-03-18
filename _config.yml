@@ -3,7 +3,7 @@ markdown: kramdown
 highlighter: rouge
 
 # Setup
-title: "Chandni's Website"
+title: "TTT"
 description: 'Critical commentary on tech and society'
 url: 'https://chandniverse.github.io'
 baseurl: /
