@@ -1,30 +1,27 @@
-
-
+# Dependencies
+markdown: kramdown
+highlighter: rouge
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 relative_permalinks: true
 
 # Setup
-title:            'Chandni\'s Website'
-tagline:          'A personal blog powered by Jekyll'
-description:      'A Jekyll site with the Primer theme.'
-url:              https://chandniverse.github.io
-baseurl:          https://chandniverse.github.io/
+title: 'Chandni\'s Website'
+tagline: 'A personal blog powered by Jekyll'
+description: 'A Jekyll site with the Primer theme.'
+url: 'https://chandniverse.github.io'
+baseurl: '/'
 
 author:
-  name:           'Chandni'
-  url:            https://twitter.com/mdo
+  name: 'Chandni'
+  url: 'https://twitter.com/mdo'
 
-paginate:         5
+paginate: 5
 
 # GitHub Pages specific configuration
-theme:            jekyll-theme-primer
+theme: 'jekyll-theme-primer'
 
 # Custom vars
 github:
-  repo:           https://github.com/chandniverse/chandniverse.github.io
-
-  # Dependencies
-markdown:  kramdown
-highlighter:  rouge
+  repo: 'https://github.com/chandniverse/chandniverse.github.io'
