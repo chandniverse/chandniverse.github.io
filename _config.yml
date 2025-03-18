@@ -24,3 +24,7 @@ theme:            jekyll-theme-primer
 # Custom vars
 github:
   repo:           https://github.com/chandniverse/chandniverse.github.io
+
+  # Dependencies
+markdown:  kramdown
+highlighter:  rouge
