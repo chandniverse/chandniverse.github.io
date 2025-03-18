@@ -7,20 +7,21 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title:            'Chandni\'s Website'
+tagline:          'A personal blog powered by Jekyll'
+description:      'A Jekyll site with the Primer theme.'
+url:              https://chandniverse.github.io
+baseurl:          https://chandniverse.github.io/
 
 author:
-  name:           'Mark Otto'
+  name:           'Chandni'
   url:            https://twitter.com/mdo
 
 paginate:         5
 
-# Custom vars
-version:          2.1.0
+# GitHub Pages specific configuration
+theme:            jekyll-theme-primer
 
+# Custom vars
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/chandniverse/chandniverse.github.io
