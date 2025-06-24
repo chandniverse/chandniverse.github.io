@@ -1,1 +1,1 @@
-Home page: https://mango-lab.notion.site/chandni
+Home page (coming soon): https://mango-lab.notion.site/chandni
