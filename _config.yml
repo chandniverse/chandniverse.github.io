@@ -1,0 +1,50 @@
+# Site settings
+title: Chandniverse
+description: Chandni's archive of HCI work, writing, courses and talks.
+author: Chandni Naidu Deadwyler
+email: hello@chandninaidu.com
+
+# URL settings
+url: "https://chandni.xyz"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Permalinks
+permalink: /:title/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /work/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - LICENSE

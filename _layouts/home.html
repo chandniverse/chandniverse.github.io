@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title animate-in">{{ page.hero_title | default: site.title }}</h1>
+    {% if page.hero_subtitle %}
+    <p class="hero-subtitle animate-in animate-delay-1">{{ page.hero_subtitle }}</p>
+    {% endif %}
+  </div>
+</section>
+
+{{ content }}
+
+{% if site.projects.size > 0 %}
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title">Selected Work</h2>
+    </header>
+    
+    <div class="grid grid--2">
+      {% for project in site.projects limit:4 %}
+      <div class="animate-in animate-delay-{{ forloop.index }}">
+        {% include project-card.html 
+           title=project.title
+           description=project.excerpt
+           tags=project.tags
+           reading_time=project.reading_time
+           image=project.image
+           gradient=project.gradient
+           url=project.url
+        %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if site.posts.size > 0 %}
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title">Recent Writing</h2>
+    </header>
+    
+    {% for post in site.posts limit:3 %}
+    <a href="{{ post.url | relative_url }}" class="post-card">
+      <p class="post-card__date">{{ post.date | date: "%B %d, %Y" }}</p>
+      <h3 class="post-card__title">{{ post.title }}</h3>
+      <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

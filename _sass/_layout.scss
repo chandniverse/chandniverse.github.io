@@ -1,0 +1,375 @@
+// =============================================================================
+// LAYOUT STYLES
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// CONTAINER
+// -----------------------------------------------------------------------------
+
+.container {
+  width: 100%;
+  max-width: $max-width-content;
+  margin: 0 auto;
+  padding: 0 $spacing-xl;
+  
+  @include md {
+    padding: 0 $spacing-xl;
+  }
+  
+  &--wide {
+    max-width: $max-width-wide;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// SITE WRAPPER
+// -----------------------------------------------------------------------------
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1;
+}
+
+// -----------------------------------------------------------------------------
+// HEADER
+// -----------------------------------------------------------------------------
+
+.site-header {
+  padding: $spacing-lg 0;
+  
+  @include md {
+    padding: $spacing-xl 0;
+  }
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+}
+
+.site-logo {
+  font-family: $font-serif;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-regular;
+  
+  a {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: $spacing-lg;
+  
+  @include md {
+    gap: $spacing-xl;
+  }
+}
+
+.nav-link {
+  font-size: $font-size-md;
+  letter-spacing: $letter-spacing-wide;
+  transition: opacity $transition-fast;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// HERO SECTION
+// -----------------------------------------------------------------------------
+
+.hero {
+  padding: $spacing-3xl 0;
+  
+  @include md {
+    padding: $spacing-4xl 0;
+  }
+}
+
+.hero-title {
+  font-family: $font-serif;
+  font-size: $font-size-3xl;
+  line-height: $line-height-tight;
+  margin-bottom: $spacing-lg;
+  
+  @include md {
+    font-size: $font-size-4xl;
+  }
+  
+  @include lg {
+    font-size: $font-size-5xl;
+  }
+}
+
+.hero-subtitle {
+  font-size: $font-size-md;
+  color: $color-text-secondary;
+  max-width: 600px;
+  
+  @include md {
+    font-size: $font-size-lg;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// SECTIONS
+// -----------------------------------------------------------------------------
+
+.section {
+  padding: $spacing-3xl 0;
+  
+  @include md {
+    padding: $spacing-4xl 0;
+  }
+}
+
+.section-header {
+  margin-bottom: $spacing-2xl;
+}
+
+.section-title {
+  font-family: $font-serif;
+  font-size: $font-size-2xl;
+  margin-bottom: $spacing-sm;
+  
+  @include md {
+    font-size: $font-size-3xl;
+  }
+}
+
+.section-description {
+  color: $color-text-secondary;
+  font-size: $font-size-md;
+}
+
+// -----------------------------------------------------------------------------
+// FOOTER
+// -----------------------------------------------------------------------------
+
+.site-footer {
+  padding: $spacing-3xl 0;
+  margin-top: auto;
+}
+
+.footer-cta {
+  font-family: $font-serif;
+  font-size: $font-size-2xl;
+  line-height: $line-height-normal;
+  margin-bottom: $spacing-2xl;
+  
+  @include md {
+    font-size: $font-size-3xl;
+  }
+  
+  @include lg {
+    font-size: $font-size-4xl;
+  }
+}
+
+.footer-availability {
+  font-size: $font-size-md;
+  color: $color-text-secondary;
+  margin-bottom: $spacing-xl;
+  max-width: 600px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-lg;
+  margin-bottom: $spacing-2xl;
+  
+  @include md {
+    gap: $spacing-xl;
+  }
+}
+
+.footer-link {
+  font-size: $font-size-md;
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-xs;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: $spacing-md;
+  padding-top: $spacing-xl;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: $font-size-md;
+  color: $color-text-secondary;
+}
+
+// -----------------------------------------------------------------------------
+// PAGE LAYOUTS
+// -----------------------------------------------------------------------------
+
+.page-header {
+  padding: $spacing-2xl 0;
+  
+  @include md {
+    padding: $spacing-3xl 0;
+  }
+}
+
+.page-title {
+  font-family: $font-serif;
+  font-size: $font-size-3xl;
+  margin-bottom: $spacing-md;
+  
+  @include md {
+    font-size: $font-size-4xl;
+  }
+}
+
+.page-meta {
+  font-size: $font-size-md;
+  color: $color-text-muted;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+}
+
+.page-content {
+  padding-bottom: $spacing-3xl;
+  
+  @include md {
+    padding-bottom: $spacing-4xl;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// PROSE (for blog posts and long-form content)
+// -----------------------------------------------------------------------------
+
+.prose {
+  font-size: $font-size-md;
+  line-height: $line-height-relaxed;
+  
+  h2 {
+    font-family: $font-serif;
+    font-size: $font-size-2xl;
+    margin-top: $spacing-3xl;
+    margin-bottom: $spacing-lg;
+  }
+  
+  h3 {
+    font-size: $font-size-xl;
+    margin-top: $spacing-2xl;
+    margin-bottom: $spacing-md;
+  }
+  
+  h4 {
+    font-size: $font-size-lg;
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-md;
+  }
+  
+  p {
+    margin-bottom: $spacing-lg;
+  }
+  
+  ul, ol {
+    margin-bottom: $spacing-lg;
+    padding-left: $spacing-xl;
+  }
+  
+  li {
+    margin-bottom: $spacing-sm;
+  }
+  
+  blockquote {
+    border-left: 3px solid $color-accent-pink;
+    padding-left: $spacing-lg;
+    margin: $spacing-xl 0;
+    font-style: italic;
+    color: $color-text-secondary;
+  }
+  
+  code {
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+    font-size: 0.9em;
+    background: $color-bg-secondary;
+    padding: 0.2em 0.4em;
+    border-radius: $border-radius-sm;
+  }
+  
+  pre {
+    background: $color-bg-dark;
+    color: $color-text-inverse;
+    padding: $spacing-lg;
+    border-radius: $border-radius-md;
+    overflow-x: auto;
+    margin: $spacing-xl 0;
+    
+    code {
+      background: none;
+      padding: 0;
+      color: inherit;
+    }
+  }
+  
+  img {
+    border-radius: $border-radius-md;
+    margin: $spacing-xl 0;
+  }
+  
+  hr {
+    border: none;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: $spacing-3xl 0;
+  }
+  
+  a {
+    color: $color-accent-teal;
+    text-decoration: underline;
+    text-decoration-color: rgba($color-accent-teal, 0.3);
+    text-underline-offset: 2px;
+    transition: text-decoration-color $transition-fast;
+    
+    &:hover {
+      text-decoration-color: $color-accent-teal;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// GRID UTILITIES
+// -----------------------------------------------------------------------------
+
+.grid {
+  display: grid;
+  gap: $spacing-xl;
+  
+  &--2 {
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  &--3 {
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
