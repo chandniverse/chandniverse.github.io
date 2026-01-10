@@ -1,87 +1,28 @@
-# Chandniverse
+# Chandni Naidu Portfolio
 
-Personal website and archive of HCI work, writing, courses and talks.
+Single-page portfolio site built with Jekyll.
 
-## Quick Start
+## Setup
 
-### Local Development
+1. Add your project images to `assets/images/projects/`
+2. Download [Satoshi font](https://www.fontshare.com/fonts/satoshi) and add to `assets/fonts/`
+3. Push to GitHub
+4. Enable Pages: Settings → Pages → Source: GitHub Actions
 
-1. Install Ruby (3.2+) and Bundler
-2. Clone this repo
-3. Install dependencies:
-   ```bash
-   bundle install
-   ```
-4. Start the dev server:
-   ```bash
-   bundle exec jekyll serve
-   ```
-5. Open http://localhost:4000
+## Image filenames
 
-### Adding Content
+- `aspire.png`
+- `design-ops.png`
+- `language-models.png`
+- `financial-inclusion.png`
+- `flintoclass.png`
+- `digital-inclusion.png`
 
-**Projects** go in `_projects/`:
-```yaml
----
-title: "Project Title"
-excerpt: "Short description"
-tags:
-  - Design
-  - Research
-reading_time: "10 min"
-image: /assets/images/projects/cover.jpg
-gradient: yellow  # yellow, blue, purple, green, peach
----
+## Local dev
 
-Your content here...
+```bash
+bundle install
+bundle exec jekyll serve
 ```
 
-**Blog posts** go in `_posts/` with filename `YYYY-MM-DD-title.md`:
-```yaml
----
-title: "Post Title"
-date: 2024-01-15
-excerpt: "Short description"
-tags:
-  - Topic
-reading_time: "5 min"
----
-
-Your content here...
-```
-
-### Fonts
-
-This site uses:
-- **EB Garamond** (Google Fonts) - for display headings
-- **Satoshi** (Fontshare) - for body text
-
-Download Satoshi from [Fontshare](https://www.fontshare.com/fonts/satoshi) and place the woff/woff2 files in `assets/fonts/`.
-
-### Custom Domains
-
-The site is configured to serve from:
-- **Primary:** chandni.xyz
-- **Alternate:** chandninaidu.com
-
-DNS configuration required at your registrar:
-```
-A     @     185.199.108.153
-A     @     185.199.109.153
-A     @     185.199.110.153
-A     @     185.199.111.153
-CNAME www   chandniverse.github.io
-```
-
-## Design System
-
-Colors:
-- Accent Pink: `#F745A4`
-- Accent Orange: `#FF911F`
-- Accent Teal: `#366E91`
-
-Card gradients available: yellow, blue, purple, green, peach
-
-## License
-
-Content © Chandni Naidu Deadwyler. Code MIT.
+Open http://localhost:4000

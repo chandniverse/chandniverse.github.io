@@ -1,13 +1,9 @@
-# Satoshi Font Files
+# Fonts
 
 Download Satoshi from https://www.fontshare.com/fonts/satoshi
 
-Place these files here:
+Add these files:
 - Satoshi-Regular.woff2
 - Satoshi-Regular.woff
 - Satoshi-Medium.woff2
 - Satoshi-Medium.woff
-- Satoshi-Bold.woff2
-- Satoshi-Bold.woff
-- Satoshi-Italic.woff2
-- Satoshi-Italic.woff

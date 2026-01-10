@@ -1,0 +1,336 @@
+// =============================================================================
+// MAIN STYLES
+// =============================================================================
+
+@import 'variables';
+
+// -----------------------------------------------------------------------------
+// RESET & BASE
+// -----------------------------------------------------------------------------
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $font-sans;
+  font-size: $font-size-md;
+  line-height: 1.5;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// LAYOUT
+// -----------------------------------------------------------------------------
+
+.container {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-xl;
+}
+
+// -----------------------------------------------------------------------------
+// HEADER
+// -----------------------------------------------------------------------------
+
+.header {
+  padding: $space-lg 0;
+  
+  @include md {
+    padding: $space-xl 0;
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: $font-serif;
+  font-size: $font-size-xl;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  
+  @include md {
+    font-size: 1.75rem;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: $space-lg;
+  
+  @include md {
+    gap: $space-xl;
+  }
+}
+
+.nav__link {
+  font-size: $font-size-base;
+  color: $color-text;
+  position: relative;
+  transition: color $transition;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $color-accent-pink;
+    transition: width $transition;
+  }
+  
+  &:hover {
+    color: $color-text;
+    
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// HERO
+// -----------------------------------------------------------------------------
+
+.hero {
+  padding: $space-3xl 0 $space-4xl;
+  
+  @include md {
+    padding: $space-4xl 0;
+  }
+}
+
+.hero__name {
+  font-family: $font-serif;
+  font-size: $font-size-4xl;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: $space-lg;
+  
+  @include md {
+    font-size: $font-size-5xl;
+  }
+}
+
+.hero__tagline {
+  font-size: $font-size-lg;
+  color: $color-text-secondary;
+  max-width: 500px;
+  margin-bottom: $space-xl;
+  line-height: 1.5;
+  
+  @include md {
+    font-size: $font-size-xl;
+  }
+}
+
+.hero__location {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-sm;
+  padding: $space-sm $space-md;
+  background: $color-bg-secondary;
+  border-radius: 100px;
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+}
+
+// -----------------------------------------------------------------------------
+// SECTION
+// -----------------------------------------------------------------------------
+
+.section {
+  padding: $space-2xl 0 $space-4xl;
+}
+
+.section__title {
+  font-family: $font-serif;
+  font-size: $font-size-2xl;
+  font-weight: 400;
+  margin-bottom: $space-2xl;
+  
+  @include md {
+    font-size: $font-size-3xl;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// PROJECT GRID
+// -----------------------------------------------------------------------------
+
+.projects {
+  display: grid;
+  gap: $space-xl;
+  
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-2xl;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// PROJECT CARD
+// -----------------------------------------------------------------------------
+
+.card {
+  display: block;
+  background: $color-bg;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $shadow-card;
+  transition: transform $transition, box-shadow $transition;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-card-hover;
+    
+    .card__image img {
+      transform: scale(1.03);
+    }
+  }
+}
+
+.card__image {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  
+  // Gradient backgrounds
+  &--purple { background: $gradient-purple; }
+  &--yellow { background: $gradient-yellow; }
+  &--blue { background: $gradient-blue; }
+  &--green { background: $gradient-green; }
+  &--peach { background: $gradient-peach; }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+}
+
+.card__content {
+  padding: $space-lg;
+  
+  @include md {
+    padding: $space-xl;
+  }
+}
+
+.card__title {
+  font-size: $font-size-lg;
+  font-weight: 500;
+  margin-bottom: $space-sm;
+  line-height: 1.3;
+  
+  @include md {
+    font-size: $font-size-xl;
+  }
+}
+
+.card__description {
+  font-size: $font-size-base;
+  color: $color-text-secondary;
+  line-height: 1.5;
+}
+
+// -----------------------------------------------------------------------------
+// FOOTER
+// -----------------------------------------------------------------------------
+
+.footer {
+  padding: $space-3xl 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: $space-2xl;
+}
+
+.footer__cta {
+  font-family: $font-serif;
+  font-size: $font-size-2xl;
+  font-weight: 400;
+  margin-bottom: $space-xl;
+  max-width: 600px;
+  
+  @include md {
+    font-size: $font-size-3xl;
+  }
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-lg;
+  margin-bottom: $space-2xl;
+  
+  @include md {
+    gap: $space-xl;
+  }
+}
+
+.footer__link {
+  font-size: $font-size-md;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  
+  &--pink::after { background: $color-accent-pink; }
+  &--orange::after { background: $color-accent-orange; }
+  &--teal::after { background: $color-accent-teal; }
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: $space-md;
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+}
+
+// -----------------------------------------------------------------------------
+// UTILITIES
+// -----------------------------------------------------------------------------
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
