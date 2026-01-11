@@ -65,9 +65,6 @@ As a leader & manager, I've built happy & successful teams, and provided the rig
 ---
 
 ## Get in touch
-
-
-
 <div class="contact-links">
   <a href="mailto:chandni.naidu@outlook.com">Email</a>
   <a href="https://calendar.notion.so/meet/chandni/schedule">Calendar</a>
