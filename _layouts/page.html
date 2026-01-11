@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="container">
+  {% if page.show_back %}
+  <a href="{{ '/' | relative_url }}" class="back-link">Home</a>
+  {% endif %}
+  
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="post-meta">{{ page.description }}</p>
+    {% endif %}
+  </header>
+  
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

@@ -1,23 +1,24 @@
 # Site settings
-title: Chandni Naidu
-description: Designing satisfying experiences that simplify complex user needs
-author: Chandni Naidu
+title: Chandni Naidu Deadwyler
+description: Product design, research, and strategy for data-driven workflows.
+author: Chandni Naidu Deadwyler
+email: chandni.naidu@outlook.com
 
-# URL settings
 url: "https://chandniverse.github.io"
 baseurl: ""
 
-# Build settings
+# Build
 markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
 
-# Plugins
+# Posts
+permalink: /blog/:slug/
+
 plugins:
   - jekyll-seo-tag
 
-# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock

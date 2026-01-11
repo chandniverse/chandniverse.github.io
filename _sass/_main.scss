@@ -1,0 +1,364 @@
+@import 'variables';
+
+// =============================================================================
+// BASE
+// =============================================================================
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $font-sans;
+  line-height: 1.6;
+  color: $text;
+  background: $bg;
+}
+
+::selection {
+  background: $accent;
+  color: white;
+}
+
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+
+h1, h2, h3 {
+  font-family: $font-serif;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: $space-sm;
+  
+  @include md {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: $space-2xl;
+  margin-bottom: $space-md;
+  
+  @include md {
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: $space-xl;
+  margin-bottom: $space-sm;
+}
+
+p {
+  margin-bottom: $space-md;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: $border;
+  margin: $space-2xl 0;
+}
+
+ul, ol {
+  margin-bottom: $space-md;
+  padding-left: $space-lg;
+}
+
+li {
+  margin-bottom: $space-sm;
+}
+
+blockquote {
+  border-left: 3px solid $accent;
+  padding-left: $space-lg;
+  margin: $space-xl 0;
+  color: $text-secondary;
+  font-style: italic;
+}
+
+code {
+  font-family: 'SF Mono', Monaco, monospace;
+  font-size: 0.9em;
+  background: rgba(0,0,0,0.04);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+pre {
+  background: #1a1a1a;
+  color: #f8f8f2;
+  padding: $space-lg;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: $space-xl 0;
+  
+  code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: $space-lg 0;
+}
+
+// =============================================================================
+// LAYOUT
+// =============================================================================
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: $space-xl $space-lg;
+  
+  @include md {
+    padding: $space-3xl $space-lg;
+  }
+}
+
+.container--wide {
+  max-width: $max-width-wide;
+}
+
+// =============================================================================
+// HEADER
+// =============================================================================
+
+.site-header {
+  padding: $space-lg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $max-width-wide;
+  margin: 0 auto;
+}
+
+.site-logo {
+  font-family: $font-serif;
+  font-size: 1.25rem;
+  color: $text;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: none;
+    color: $accent;
+  }
+}
+
+.site-nav {
+  display: flex;
+  gap: $space-lg;
+  
+  a {
+    color: $text-secondary;
+    font-size: 0.95rem;
+    
+    &:hover {
+      color: $text;
+    }
+  }
+}
+
+// =============================================================================
+// FOOTER
+// =============================================================================
+
+.site-footer {
+  border-top: 1px solid $border;
+  padding: $space-2xl $space-lg;
+  margin-top: $space-3xl;
+  text-align: center;
+  color: $text-muted;
+  font-size: 0.9rem;
+  
+  a {
+    color: $text-secondary;
+  }
+}
+
+// =============================================================================
+// HOME PAGE
+// =============================================================================
+
+.intro {
+  margin-bottom: $space-2xl;
+}
+
+.intro__title {
+  margin-bottom: $space-sm;
+}
+
+.intro__role {
+  font-size: 1.1rem;
+  color: $text-secondary;
+  margin-bottom: $space-lg;
+}
+
+.intro__bio {
+  font-size: 1.1rem;
+  color: $text-secondary;
+  max-width: 560px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-md $space-xl;
+  margin: $space-xl 0;
+  font-size: 0.95rem;
+}
+
+// =============================================================================
+// PROJECT LIST
+// =============================================================================
+
+.project {
+  margin-bottom: $space-2xl;
+  padding-bottom: $space-xl;
+  border-bottom: 1px solid $border;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.project__title {
+  font-size: 1.25rem;
+  margin-bottom: $space-sm;
+  margin-top: 0;
+  
+  a {
+    color: $text;
+    
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.project__desc {
+  color: $text-secondary;
+  margin-bottom: $space-sm;
+}
+
+.project__meta {
+  font-size: 0.85rem;
+  color: $text-muted;
+}
+
+// =============================================================================
+// BLOG / POST
+// =============================================================================
+
+.post-header {
+  margin-bottom: $space-2xl;
+}
+
+.post-title {
+  margin-bottom: $space-sm;
+}
+
+.post-meta {
+  color: $text-muted;
+  font-size: 0.95rem;
+}
+
+.post-content {
+  h2:first-child {
+    margin-top: 0;
+  }
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: $space-lg;
+  font-size: 0.95rem;
+  color: $text-secondary;
+  
+  &:hover {
+    color: $text;
+  }
+  
+  &::before {
+    content: '← ';
+  }
+}
+
+// =============================================================================
+// POST LIST (for blog index)
+// =============================================================================
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list__item {
+  margin-bottom: $space-xl;
+  padding-bottom: $space-lg;
+  border-bottom: 1px solid $border;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.post-list__date {
+  font-size: 0.85rem;
+  color: $text-muted;
+  margin-bottom: $space-sm;
+}
+
+.post-list__title {
+  font-size: 1.15rem;
+  margin: 0;
+  
+  a {
+    color: $text;
+    
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.post-list__excerpt {
+  color: $text-secondary;
+  margin-top: $space-sm;
+}
