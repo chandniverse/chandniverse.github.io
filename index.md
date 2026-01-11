@@ -3,9 +3,9 @@ layout: home
 ---
 
 <div class="intro">
-  <h1 class="intro__title">Chandni Naidu Deadwyler</h1>
-  <p class="intro__role">Product Designer</p>
-  <p class="intro__bio">Product design, research, and strategy for data-driven workflows. I'm a Product Design Leader with 8 years of experience building digital products, including being a founder in education technology.</p>
+  <h1 class="intro__title">Chandni</h1>
+  <p class="intro__role">Product design, research, and strategy for data-driven workflows.</p>
+  <p class="intro__bio"> I'm a Product Design Leader with 8 years of experience building digital products, including being a founder in education technology.</p>
 </div>
 
 <div class="contact-links">
@@ -66,7 +66,7 @@ As a leader & manager, I've built happy & successful teams, and provided the rig
 
 ## Get in touch
 
-Currently open to full time work or contracts in product design, research and strategy in finance, healthcare and ed-tech. Remote, or in-person in NYC.
+
 
 <div class="contact-links">
   <a href="mailto:chandni.naidu@outlook.com">Email</a>
