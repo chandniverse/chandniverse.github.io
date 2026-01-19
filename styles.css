@@ -1,0 +1,43 @@
+/* Custom styles for Chandniverse */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Callout styling */
+.callout {
+  margin: 1.5rem 0;
+}
+
+/* Code block improvements */
+pre {
+  border-radius: 8px;
+}
+
+/* Table styling */
+table {
+  margin: 1rem 0;
+}
+
+/* Figure captions */
+figcaption {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Navigation progress indicator (optional enhancement) */
+.quarto-title-block {
+  margin-bottom: 2rem;
+}
+
+/* Improve readability */
+p {
+  line-height: 1.7;
+}
+
+/* Citation hover preview */
+.citation-hover {
+  font-size: 0.9rem;
+}

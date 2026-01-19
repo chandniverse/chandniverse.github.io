@@ -35,18 +35,17 @@ jobs:
           packages: |
             any::ggplot2
             any::plotly
-            any::rmarkdown
+            any::dplyr
             any::knitr
+            any::rmarkdown
 
       - name: Render Quarto site
-        run: |
-          cd sandbox
-          quarto render
+        run: quarto render
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: sandbox/docs
+          path: docs
 
   deploy:
     environment:

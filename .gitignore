@@ -1,4 +1,26 @@
-.Rproj.user
+# R specific
 .Rhistory
-.RData
-.Ruserdata
+.Rdata
+.httr-oauth
+.DS_Store
+*.Rproj.user
+
+# Quarto
+/.quarto/
+/_site/
+
+# Local render (uncomment if you don't want to commit rendered docs)
+# /docs/
+
+# Temporary files
+*.log
+*.aux
+*.out
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

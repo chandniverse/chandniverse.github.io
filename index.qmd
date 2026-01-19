@@ -1,0 +1,26 @@
+---
+title: "Welcome to Chandniverse"
+subtitle: "Research, Analysis, and Data Visualization"
+---
+
+## About This Site
+
+This is a research website built with [Quarto](https://quarto.org/) and hosted on GitHub Pages. It features interactive data visualizations, reproducible analyses, and academic-standard references.
+
+## Recent Work
+
+### Interactive Analysis
+
+Explore data with interactive visualizations built using ggplot2 and plotly. See the [Analysis](analysis.qmd) page for examples.
+
+### Reproducibility
+
+All code and data are available for download. Check the [Data & Code](data.qmd) section for reproducibility materials.
+
+## Getting Started
+
+Navigate using the menu above or the sidebar to explore different sections of this site.
+
+::: {.callout-note}
+This site is under active development. Check back for updates!
+:::

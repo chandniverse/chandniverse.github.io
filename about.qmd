@@ -1,0 +1,52 @@
+---
+title: "About"
+---
+
+## About This Site
+
+This website is built with [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. It's designed to showcase reproducible research with interactive data visualizations.
+
+## Features
+
+- **Interactive Visualizations**: Built with ggplot2 and plotly
+- **Reproducible Research**: All code and data available for download
+- **Academic Standards**: Proper citations and references
+- **Version Control**: Hosted on GitHub for transparency
+
+## About the Author
+
+*Add your bio here.*
+
+## Technical Details
+
+### Built With
+
+- [Quarto](https://quarto.org/) - Publishing system
+- [R](https://www.r-project.org/) - Statistical computing
+- [ggplot2](https://ggplot2.tidyverse.org/) - Data visualization
+- [plotly](https://plotly.com/r/) - Interactive plots
+- [GitHub Pages](https://pages.github.com/) - Hosting
+
+### Site Structure
+
+```
+chandniverse.github.io/
+├── _quarto.yml          # Site configuration
+├── index.qmd            # Homepage
+├── analysis.qmd         # Analysis page
+├── data.qmd             # Data & code page
+├── about.qmd            # This page
+├── references.bib       # Bibliography
+├── data/                # Datasets
+├── scripts/             # R scripts
+└── docs/                # Rendered site (auto-generated)
+```
+
+## Contact
+
+- GitHub: [chandniverse](https://github.com/chandniverse)
+- Email: *your email*
+
+## Acknowledgments
+
+*Add acknowledgments here.*

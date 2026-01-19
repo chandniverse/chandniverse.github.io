@@ -1,0 +1,134 @@
+---
+title: "Data Analysis"
+author: "Chandni"
+date: last-modified
+bibliography: references.bib
+---
+
+## Introduction
+
+This page demonstrates interactive data visualization using ggplot2 and plotly. The approach follows best practices for reproducible research [@wickham2016; @xie2018].
+
+## Setup
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(ggplot2)
+library(plotly)
+library(dplyr)
+```
+
+## Interactive Scatter Plot
+
+The following visualization explores the relationship between vehicle weight and fuel efficiency in the `mtcars` dataset.
+
+```{r}
+#| label: fig-scatter
+#| fig-cap: "Interactive scatter plot showing the relationship between weight and MPG, colored by number of cylinders"
+#| warning: false
+
+p <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl), 
+                         text = paste("Car:", rownames(mtcars)))) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", se = FALSE, linetype = "dashed") +
+  scale_color_brewer(palette = "Set1") +
+  labs(
+    x = "Weight (1000 lbs)",
+    y = "Miles per Gallon",
+    color = "Cylinders"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+ggplotly(p, tooltip = c("text", "x", "y"))
+```
+
+As shown in @fig-scatter, there is a clear negative relationship between vehicle weight and fuel efficiency. Vehicles with more cylinders tend to be heavier and less fuel-efficient.
+
+## Distribution Analysis
+
+```{r}
+#| label: fig-histogram
+#| fig-cap: "Distribution of MPG values across all vehicles"
+#| warning: false
+
+p2 <- ggplot(mtcars, aes(x = mpg, fill = factor(cyl))) +
+  geom_histogram(binwidth = 2, alpha = 0.7, position = "identity") +
+  scale_fill_brewer(palette = "Set2") +
+  labs(
+    x = "Miles per Gallon",
+    y = "Count",
+    fill = "Cylinders"
+  ) +
+  theme_minimal()
+
+ggplotly(p2)
+```
+
+## Box Plot Comparison
+
+```{r}
+#| label: fig-boxplot
+#| fig-cap: "Comparison of MPG across different cylinder counts"
+#| warning: false
+
+p3 <- ggplot(mtcars, aes(x = factor(cyl), y = mpg, fill = factor(cyl))) +
+  geom_boxplot(alpha = 0.7) +
+  geom_jitter(width = 0.2, alpha = 0.5) +
+  scale_fill_brewer(palette = "Pastel1") +
+  labs(
+    x = "Number of Cylinders",
+    y = "Miles per Gallon",
+    fill = "Cylinders"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+ggplotly(p3)
+```
+
+## Summary Statistics
+
+```{r}
+#| label: tbl-summary
+#| tbl-cap: "Summary statistics by cylinder count"
+
+mtcars %>%
+  group_by(Cylinders = cyl) %>%
+  summarise(
+    `Mean MPG` = round(mean(mpg), 2),
+    `SD MPG` = round(sd(mpg), 2),
+    `Mean Weight` = round(mean(wt), 2),
+    `N` = n()
+  ) %>%
+  knitr::kable()
+```
+
+## Methods {#sec-methods}
+
+The analysis was conducted using R [@rcoreteam2023] with the following packages:
+
+- **ggplot2** for static visualizations [@wickham2016]
+- **plotly** for interactive features
+- **dplyr** for data manipulation
+
+## Conclusions
+
+This exploratory analysis reveals several key patterns:
+
+1. **Weight-efficiency trade-off**: Heavier vehicles consistently show lower fuel efficiency
+2. **Cylinder effect**: More cylinders correlate with both higher weight and lower MPG
+3. **Variation**: 4-cylinder vehicles show the highest variation in fuel efficiency
+
+::: {.callout-tip}
+## Reproducibility
+All code in this analysis is fully reproducible. Download the source files from the [Data & Code](data.qmd) page.
+:::
+
+## References
+
+::: {#refs}
+:::

@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Chandniverse"
+  site-url: https://chandniverse.github.io
+  
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: analysis.qmd
+        text: Analysis
+      - href: data.qmd
+        text: Data & Code
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/chandniverse/chandniverse.github.io
+  
+  sidebar:
+    style: floating
+    search: true
+    contents:
+      - section: "Getting Started"
+        contents:
+          - index.qmd
+          - about.qmd
+      - section: "Research"
+        contents:
+          - analysis.qmd
+          - data.qmd
+  
+  page-navigation: true
+  back-to-top-navigation: true
+  reader-mode: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    number-sections: false
+    code-fold: true
+    code-tools: true
+    smooth-scroll: true
+    citations-hover: true
+    footnotes-hover: true
+
+bibliography: references.bib
+csl: apa.csl
+
+execute:
+  freeze: auto
