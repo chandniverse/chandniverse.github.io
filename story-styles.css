@@ -1,165 +1,141 @@
-/* Story Styles - Inspired by The Swaddle */
-/* Dark, immersive scrollytelling aesthetic */
-
 /* ==================== */
-/* BASE STYLES          */
+/* STORY STYLES         */
+/* Dark scrollytelling  */
 /* ==================== */
 
+/* Base */
 body {
-  background-color: #0d0d0d;
-  color: #f5f5f5;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #0d0d0d !important;
+  color: #f5f5f5 !important;
+  font-family: 'Georgia', 'Times New Roman', serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Remove default Quarto header/nav for immersive experience */
+/* Force hide ALL Quarto navigation */
+#quarto-sidebar,
+.sidebar,
+nav.sidebar,
+.quarto-sidebar,
+#quarto-margin-sidebar,
+.quarto-margin-sidebar,
+header#quarto-header,
+nav.navbar,
+.navbar,
+.nav-footer,
+footer,
+#quarto-content > * > nav,
+.quarto-title-banner,
 .quarto-title-block {
-  display: none;
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
 
-header.quarto-title-banner {
-  display: none;
+/* Full width content */
+#quarto-content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+main,
+main.content,
+.page-columns,
+.page-columns .content,
+article {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  grid-column: 1 / -1 !important;
 }
 
 /* ==================== */
 /* TYPOGRAPHY           */
 /* ==================== */
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  font-weight: 700;
-  color: #ffffff;
+h1, h2, h3, h4 {
+  font-family: 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
 }
 
-h1.hero-title {
-  font-size: 3.5rem;
-  line-height: 1.1;
-  margin-bottom: 1rem;
-  text-align: center;
+h1 {
+  font-size: 3rem !important;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 
 h2 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2rem !important;
 }
 
 p {
-  font-size: 1.25rem;
-  line-height: 1.9;
-  max-width: 680px;
-  margin: 0 auto 1.5rem auto;
+  font-size: 1.2rem !important;
+  line-height: 1.8 !important;
+  color: #e8e8e8 !important;
 }
 
 /* ==================== */
-/* CLOSEREAD SECTIONS   */
+/* CLOSEREAD OVERRIDES  */
 /* ==================== */
 
-.cr-section {
-  min-height: 100vh;
+/* Sticky column - the images */
+.sticky-col {
+  background: #0d0d0d !important;
 }
 
-/* Sticky images - full screen */
-.sticky-col-screen {
-  position: sticky;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  margin-left: calc(-50vw + 50%);
-  z-index: 1;
+.sticky-col img {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
 }
 
-.sticky-col-screen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Narrative text overlay */
+/* Narrative column - the text */
 .narrative-col {
-  position: relative;
-  z-index: 10;
-  padding: 40vh 2rem;
-}
-
-.narrative-col > * {
-  background: rgba(13, 13, 13, 0.85);
-  padding: 2rem 2.5rem;
-  border-radius: 4px;
-  margin: 2rem auto;
-  max-width: 700px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  z-index: 100 !important;
 }
 
 .narrative-col h1,
 .narrative-col h2,
-.narrative-col h3 {
-  background: transparent;
-  padding: 0;
-  margin: 0 auto 1rem auto;
-  max-width: 700px;
+.narrative-col h3,
+.narrative-col p {
+  background: rgba(13, 13, 13, 0.88) !important;
+  padding: 1.5rem 2rem !important;
+  border-radius: 6px !important;
+  max-width: 600px !important;
+  margin: 1rem auto !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* ==================== */
-/* LISTS IN NARRATIVE   */
-/* ==================== */
-
-.narrative-col ul,
-.narrative-col ol {
-  padding-left: 1.5rem;
-  margin: 1rem 0;
-}
-
-.narrative-col li {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-/* ==================== */
-/* HORIZONTAL RULE      */
-/* ==================== */
-
+/* Horizontal rule */
 hr {
-  border: none;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  margin: 2rem 0;
+  border: none !important;
+  border-top: 1px solid rgba(255,255,255,0.2) !important;
+  max-width: 600px !important;
+  margin: 2rem auto !important;
 }
 
-/* ==================== */
-/* EMPHASIS & LINKS     */
-/* ==================== */
-
-strong {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-em {
-  color: #cccccc;
-}
-
+/* Links */
 a {
-  color: #7eb8da;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  color: #7eb8da !important;
+  text-decoration: none !important;
 }
 
 a:hover {
-  border-bottom-color: #7eb8da;
+  text-decoration: underline !important;
 }
 
-/* ==================== */
-/* BLOCKQUOTES          */
-/* ==================== */
+/* Strong/emphasis */
+strong {
+  color: #ffffff !important;
+}
 
-blockquote {
-  border-left: 3px solid #7eb8da;
-  padding-left: 1.5rem;
-  margin: 2rem 0;
-  font-style: italic;
-  color: #cccccc;
+em {
+  color: #cccccc !important;
 }
 
 /* ==================== */
@@ -167,64 +143,39 @@ blockquote {
 /* ==================== */
 
 @media (max-width: 768px) {
-  h1.hero-title {
-    font-size: 2.2rem;
+  h1 {
+    font-size: 2rem !important;
   }
   
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   
   p {
-    font-size: 1.1rem;
-    padding: 0 1rem;
+    font-size: 1.1rem !important;
   }
   
-  .narrative-col > * {
-    padding: 1.5rem;
-    margin: 1rem;
+  .narrative-col h1,
+  .narrative-col h2,
+  .narrative-col p {
+    padding: 1rem 1.5rem !important;
+    margin: 0.5rem 1rem !important;
   }
 }
 
 /* ==================== */
-/* SCROLLBAR STYLING    */
+/* SCROLLBAR            */
 /* ==================== */
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #0d0d0d;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #444;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* ==================== */
-/* PROGRESS INDICATOR   */
-/* ==================== */
-
-/* Optional: Add a reading progress bar at top */
-.progress-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: transparent;
-  z-index: 1000;
-}
-
-.progress-bar {
-  height: 100%;
-  background: linear-gradient(90deg, #7eb8da, #a8d4ea);
-  width: 0%;
-  transition: width 0.1s ease;
+  background: #333;
+  border-radius: 3px;
 }

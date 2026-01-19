@@ -1,30 +1,61 @@
 ---
 title: "A Visual Story"
-subtitle: "Scrollytelling with Quarto"
-author: "Chandni"
-date: last-modified
-format: 
+format:
   closeread-html:
     css: story-styles.css
     remove-header-space: true
+    cr-section:
+      layout: overlay-center
 ---
+
+```{css, echo=FALSE}
+/* Override all Quarto website elements */
+#quarto-sidebar,
+.sidebar,
+nav.sidebar,
+#quarto-margin-sidebar,
+.quarto-margin-sidebar,
+header#quarto-header,
+nav.navbar,
+.nav-footer,
+#quarto-content > * > nav {
+  display: none !important;
+}
+
+body {
+  background: #0d0d0d !important;
+}
+
+#quarto-content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+main.content,
+.page-columns .content {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  grid-column: 1 / -1 !important;
+}
+```
 
 :::{.cr-section}
 
-:::{#cr-hero .sticky-col-screen}
+:::{#cr-hero}
 ![](images/placeholder-hero.svg)
 :::
 
-# A Visual Story {.hero-title}
+# A Visual Story
 
-This is a scrollytelling experience. As you scroll, images will change and text will guide you through the narrative. @cr-hero
+This is a scrollytelling experience. As you scroll, the images will change and text will guide you through the narrative. @cr-hero
 
 :::
 
 
 :::{.cr-section}
 
-:::{#cr-scene1 .sticky-col-screen}
+:::{#cr-scene1}
 ![](images/placeholder-1.svg)
 :::
 
@@ -39,7 +70,7 @@ The reader scrolls through your narrative while the visuals stay fixed, creating
 
 :::{.cr-section}
 
-:::{#cr-scene2 .sticky-col-screen}
+:::{#cr-scene2}
 ![](images/placeholder-2.svg)
 :::
 
@@ -47,19 +78,14 @@ The reader scrolls through your narrative while the visuals stay fixed, creating
 
 Here we dive deeper into the subject matter. Perhaps we're exploring data, telling a personal story, or explaining a complex concept. @cr-scene2
 
-Scrollytelling works particularly well for:
-
-- Data journalism
-- Documentary storytelling  
-- Educational content
-- Research communication
+Scrollytelling works particularly well for data journalism, documentary storytelling, educational content, and research communication.
 
 :::
 
 
 :::{.cr-section}
 
-:::{#cr-scene3 .sticky-col-screen}
+:::{#cr-scene3}
 ![](images/placeholder-3.svg)
 :::
 
@@ -74,7 +100,7 @@ You can use illustrations, photographs, charts, or any visual element that suppo
 
 :::{.cr-section}
 
-:::{#cr-scene4 .sticky-col-screen}
+:::{#cr-scene4}
 ![](images/placeholder-4.svg)
 :::
   
@@ -86,6 +112,6 @@ We wrap up with final thoughts and takeaways. The reader has journeyed through y
 
 **Thank you for reading.**
 
-*Replace the placeholder images with your own visuals to bring your story to life.*
+[← Back to main site](index.html)
 
 :::

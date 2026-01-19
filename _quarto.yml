@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!story.qmd"
 
 website:
   title: "Chandniverse"
@@ -14,8 +17,8 @@ website:
         text: Analysis
       - text: Stories
         menu:
-          - href: story.qmd
-            text: "Sample Story"
+          - text: "A Visual Story"
+            href: story.html
       - href: data.qmd
         text: Data & Code
       - href: about.qmd
@@ -36,9 +39,6 @@ website:
         contents:
           - analysis.qmd
           - data.qmd
-      - section: "Visual Stories"
-        contents:
-          - story.qmd
   
   page-navigation: true
   back-to-top-navigation: true

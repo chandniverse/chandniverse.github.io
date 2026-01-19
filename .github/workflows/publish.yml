@@ -43,8 +43,13 @@ jobs:
         run: |
           quarto add qmd-lab/closeread --no-prompt
 
-      - name: Render Quarto site
+      - name: Render main website
         run: quarto render
+
+      - name: Render story separately with Closeread
+        run: |
+          quarto render story.qmd --to closeread-html
+          mv story.html docs/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
