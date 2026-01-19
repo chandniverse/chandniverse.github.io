@@ -39,6 +39,10 @@ jobs:
             any::knitr
             any::rmarkdown
 
+      - name: Install Closeread extension
+        run: |
+          quarto add qmd-lab/closeread --no-prompt
+
       - name: Render Quarto site
         run: quarto render
 

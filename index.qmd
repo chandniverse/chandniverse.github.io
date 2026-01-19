@@ -1,11 +1,11 @@
 ---
-title: "Welcome to Chandniverse"
-subtitle: "Research, Analysis, and Data Visualization"
+title: "Chandni Naidu"
+subtitle: "Research, Design, Strategy"
 ---
 
 ## About This Site
 
-This is a research website built with [Quarto](https://quarto.org/) and hosted on GitHub Pages. It features interactive data visualizations, reproducible analyses, and academic-standard references.
+This is a research website built with [Quarto](https://quarto.org/) and hosted on GitHub Pages. It features my research and design reports, including interactive data visualizations, reproducible analyses, and references.
 
 ## Recent Work
 

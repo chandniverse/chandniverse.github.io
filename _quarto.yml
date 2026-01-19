@@ -12,6 +12,10 @@ website:
         text: Home
       - href: analysis.qmd
         text: Analysis
+      - text: Stories
+        menu:
+          - href: story.qmd
+            text: "Sample Story"
       - href: data.qmd
         text: Data & Code
       - href: about.qmd
@@ -32,6 +36,9 @@ website:
         contents:
           - analysis.qmd
           - data.qmd
+      - section: "Visual Stories"
+        contents:
+          - story.qmd
   
   page-navigation: true
   back-to-top-navigation: true

@@ -1,0 +1,91 @@
+---
+title: "A Visual Story"
+subtitle: "Scrollytelling with Quarto"
+author: "Chandni"
+date: last-modified
+format: 
+  closeread-html:
+    css: story-styles.css
+    remove-header-space: true
+---
+
+:::{.cr-section}
+
+:::{#cr-hero .sticky-col-screen}
+![](images/placeholder-hero.svg)
+:::
+
+# A Visual Story {.hero-title}
+
+This is a scrollytelling experience. As you scroll, images will change and text will guide you through the narrative. @cr-hero
+
+:::
+
+
+:::{.cr-section}
+
+:::{#cr-scene1 .sticky-col-screen}
+![](images/placeholder-1.svg)
+:::
+
+## The Beginning
+
+Every story has a beginning. This is where we set the scene and introduce the context for what's to come. @cr-scene1
+
+The reader scrolls through your narrative while the visuals stay fixed, creating an immersive reading experience.
+
+:::
+
+
+:::{.cr-section}
+
+:::{#cr-scene2 .sticky-col-screen}
+![](images/placeholder-2.svg)
+:::
+
+## The Middle
+
+Here we dive deeper into the subject matter. Perhaps we're exploring data, telling a personal story, or explaining a complex concept. @cr-scene2
+
+Scrollytelling works particularly well for:
+
+- Data journalism
+- Documentary storytelling  
+- Educational content
+- Research communication
+
+:::
+
+
+:::{.cr-section}
+
+:::{#cr-scene3 .sticky-col-screen}
+![](images/placeholder-3.svg)
+:::
+
+## The Climax
+
+This is where the key insight or turning point happens. The visual changes to emphasize this moment. @cr-scene3
+
+You can use illustrations, photographs, charts, or any visual element that supports your narrative.
+
+:::
+
+
+:::{.cr-section}
+
+:::{#cr-scene4 .sticky-col-screen}
+![](images/placeholder-4.svg)
+:::
+  
+## The Conclusion
+
+We wrap up with final thoughts and takeaways. The reader has journeyed through your story and arrives at the end with new understanding. @cr-scene4
+
+---
+
+**Thank you for reading.**
+
+*Replace the placeholder images with your own visuals to bring your story to life.*
+
+:::
