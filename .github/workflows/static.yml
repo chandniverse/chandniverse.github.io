@@ -21,6 +21,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug - Show structure
+        run: |
+          echo "Current directory:"
+          pwd
+          echo ""
+          echo "Root contents:"
+          ls -la
+          echo ""
+          echo "Find all _quarto.yml files:"
+          find . -name "_quarto.yml" -type f
+          echo ""
+          echo "Full tree (3 levels):"
+          find . -maxdepth 3 -type f -name "*.qmd" -o -name "_quarto.yml" | head -20
+
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
@@ -31,6 +45,7 @@ jobs:
 
       - name: Render Quarto site
         run: |
+          # Change this path based on debug output above
           cd sandbox
           quarto render
 
