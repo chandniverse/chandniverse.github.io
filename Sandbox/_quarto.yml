@@ -1,11 +1,10 @@
 project:
   type: website
-  output-dir: ../docs
+  output-dir: docs
 
 website:
   title: "Sandbox"
   site-url: https://chandniverse.github.io
-  site-path: /sandbox/docs/
   navbar:
     left:
       - href: index.qmd
@@ -19,3 +18,5 @@ format:
     toc: true
 
 editor: visual
+
+
