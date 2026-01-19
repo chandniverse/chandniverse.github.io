@@ -1,0 +1,213 @@
+/* Story Styles - Fixed for Closeread */
+/* Dark, immersive scrollytelling aesthetic */
+
+/* ==================== */
+/* HIDE QUARTO ELEMENTS */
+/* ==================== */
+
+/* Hide sidebar completely on story pages */
+#quarto-sidebar,
+.sidebar,
+.quarto-sidebar,
+nav.sidebar {
+  display: none !important;
+}
+
+/* Hide the margin sidebar too */
+#quarto-margin-sidebar,
+.quarto-margin-sidebar {
+  display: none !important;
+}
+
+/* Make content full width */
+.page-columns .content {
+  grid-column: 1 / -1 !important;
+}
+
+main.content {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#quarto-content {
+  padding: 0 !important;
+}
+
+/* Hide header */
+header#quarto-header {
+  display: none !important;
+}
+
+/* ==================== */
+/* BASE STYLES          */
+/* ==================== */
+
+body {
+  background-color: #0d0d0d !important;
+  color: #f5f5f5;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==================== */
+/* TYPOGRAPHY           */
+/* ==================== */
+
+.hero-title {
+  display: block;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.section-title {
+  display: block;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  color: #f0f0f0;
+}
+
+/* ==================== */
+/* CLOSEREAD LAYOUT     */
+/* ==================== */
+
+/* The sticky container (holds images) */
+.sticky-col {
+  background-color: #0d0d0d;
+}
+
+.sticky-col img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* The narrative text column */
+.narrative-col {
+  padding: 0 2rem;
+}
+
+.narrative-col p {
+  background: rgba(13, 13, 13, 0.9);
+  padding: 2rem 2.5rem;
+  border-radius: 4px;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Style spans used as titles */
+.narrative-col .hero-title,
+.narrative-col .section-title {
+  background: rgba(13, 13, 13, 0.9);
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  max-width: 600px;
+  margin: 1rem auto;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Trigger references (the @cr-xxx links) should be invisible */
+.trigger-ref {
+  display: none;
+}
+
+/* ==================== */
+/* CR-SECTION SPACING   */
+/* ==================== */
+
+.cr-section {
+  min-height: 100vh;
+}
+
+/* First section - more top padding for hero */
+.cr-section:first-child .narrative-col {
+  padding-top: 30vh;
+}
+
+/* ==================== */
+/* EMPHASIS & LINKS     */
+/* ==================== */
+
+strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+em {
+  color: #cccccc;
+}
+
+a {
+  color: #7eb8da;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: #7eb8da;
+}
+
+/* ==================== */
+/* RESPONSIVE           */
+/* ==================== */
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+  .narrative-col p,
+  .narrative-col .hero-title,
+  .narrative-col .section-title {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+/* ==================== */
+/* SCROLLBAR STYLING    */
+/* ==================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

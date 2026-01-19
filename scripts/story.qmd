@@ -1,0 +1,87 @@
+---
+title: "A Visual Story"
+subtitle: "Scrollytelling with Quarto"
+author: "Chandni"
+date: last-modified
+format: 
+  closeread-html:
+    css: story-styles.css
+    remove-header-space: true
+sidebar: false
+toc: false
+page-layout: custom
+---
+
+::: {.cr-section layout="overlay-center"}
+
+::: {#cr-hero}
+![](images/placeholder-hero.svg){width="100%"}
+:::
+
+[A Visual Story]{.hero-title}
+
+This is a scrollytelling experience. As you scroll, images will change and text will guide you through the narrative. @cr-hero
+
+:::
+
+
+::: {.cr-section layout="overlay-center"}
+
+::: {#cr-scene1}
+![](images/placeholder-1.svg){width="100%"}
+:::
+
+[The Beginning]{.section-title}
+
+Every story has a beginning. This is where we set the scene and introduce the context for what's to come. @cr-scene1
+
+The reader scrolls through your narrative while the visuals stay fixed, creating an immersive reading experience.
+
+:::
+
+
+::: {.cr-section layout="overlay-center"}
+
+::: {#cr-scene2}
+![](images/placeholder-2.svg){width="100%"}
+:::
+
+[The Middle]{.section-title}
+
+Here we dive deeper into the subject matter. Perhaps we're exploring data, telling a personal story, or explaining a complex concept. @cr-scene2
+
+Scrollytelling works particularly well for data journalism, documentary storytelling, educational content, and research communication.
+
+:::
+
+
+::: {.cr-section layout="overlay-center"}
+
+::: {#cr-scene3}
+![](images/placeholder-3.svg){width="100%"}
+:::
+
+[The Climax]{.section-title}
+
+This is where the key insight or turning point happens. The visual changes to emphasize this moment. @cr-scene3
+
+You can use illustrations, photographs, charts, or any visual element that supports your narrative.
+
+:::
+
+
+::: {.cr-section layout="overlay-center"}
+
+::: {#cr-scene4}
+![](images/placeholder-4.svg){width="100%"}
+:::
+  
+[The Conclusion]{.section-title}
+
+We wrap up with final thoughts and takeaways. The reader has journeyed through your story and arrives at the end with new understanding. @cr-scene4
+
+**Thank you for reading.**
+
+*Replace the placeholder images with your own visuals to bring your story to life.*
+
+:::
