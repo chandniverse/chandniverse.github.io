@@ -1,0 +1,260 @@
+---
+title: "Bookshelf"
+subtitle: "What I've been reading"
+---
+
+```{=html}
+<style>
+.book-card {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #f8f9fa;
+  border-left: 2px solid #e41a1c;
+}
+
+.book-cover {
+  flex-shrink: 0;
+}
+
+.book-cover img {
+  width: 120px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.book-info {
+  flex-grow: 1;
+}
+
+.book-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.1rem 0;
+  color: #333;
+}
+
+.book-author {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 400;
+  margin: 0 0 0.1rem 0;
+}
+
+.book-year {
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.book-note {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #444;
+}
+
+.year-section {
+  margin-top: 2.5rem;
+}
+
+.year-note {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 0.9;
+  color: #444;
+}
+
+.year-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e41a1c;
+  border-bottom: 1px solid #e41a1c;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .book-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+</style>
+```
+
+A collection of books I've read and would recommend, organized by year.
+
+
+
+::: {.year-section}
+## 2026 {.year-heading}
+[Welcoming more serendipity in my book choices this year.]{.year-note}
+
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2026_02.jpg)
+:::
+::: {.book-info}
+[**She Who Became the Sun**]{.book-title}
+
+[Shelley Parker-Chan]{.book-author}
+
+[Reading: January 2025]{.book-year}
+
+[I seem to be drawn to historic fiction based in East Asia.]{.book-note}
+:::
+:::
+
+
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2026_01.jpg)
+:::
+::: {.book-info}
+[**In Every Mirror She's Black**]{.book-title}
+
+[Lola Akinmade Åkerström]{.book-author}
+
+[Read: January 2025]{.book-year}
+
+[Three Black women from different places end up in Sweden for different reasons, on different terms, and get to see Swedish society for what it is.]{.book-note}
+:::
+:::
+
+
+
+::: {.year-section}
+## 2025 {.year-heading}
+
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2025_01.jpg)
+:::
+::: {.book-info}
+[**Take My Hand**]{.book-title}
+
+[Dolen Perkins-Valdez]{.book-author}
+
+[Read: December 2025]{.book-year}
+
+[A book that taught me (once again) that fiction and narrative are more powerful tools to grasp the gravity of uncomfortable historic events and social facts. ]{.book-note}
+:::
+:::
+
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2025_02.jpg)
+:::
+::: {.book-info}
+[**Best Of Friends**]{.book-title}
+
+[Kamila Shamsie]{.book-author}
+
+[Read: December 2025]{.book-year}
+
+[Girls everywhere are the same, and ones from the Indian subcontinent are particularly plucky. I enjoyed the stories of two friends in Pakistan, all the way from girlhood in Karachi to rich professional careers in London. ]{.book-note}
+:::
+:::
+
+
+
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2025_03.jpg)
+:::
+::: {.book-info}
+[**Americanah: A novel**]{.book-title}
+
+[Chimamanda Ngozi Adichie]{.book-author}
+
+[Read: October 2024]{.book-year}
+
+[This book made everything simultaneously better by validating my observations about Americans, and worse by not redeeming them from my already unflattering impression.]{.book-note}
+:::
+:::
+:::
+
+::: {.year-section}
+## 2024 {.year-heading}
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2024_01.jpg)
+:::
+::: {.book-info}
+[**The Poppy War**]{.book-title}
+
+[Rebecca F Kuang]{.book-author}
+
+[Read: 2024]{.book-year}
+
+[A special cross between fantasy, magial realism and historic fiction, such a treat for anybody who enjoys these genres. If you're unfamiliar with history China, Korea and Japan, you may not make the connections, but if you do, it will be cathartic and poetic, you'll love how beautifully the story addresses deep, shared wounds. ]{.book-note}
+:::
+::: 
+
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2024_02.jpg)
+:::
+::: {.book-info}
+[**Em and the Big Hoom**]{.book-title}
+
+[Jerry Pinto]{.book-author}
+
+[Read: January 2025]{.book-year}
+
+[ We take life as it comes, and we write about it like it will be the most important story ever told.]{.book-note}
+:::
+:::
+
+
+::: {.year-section}
+## 2023 {.year-heading}
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2023_01.jpg)
+:::
+::: {.book-info}
+[**Coming Out As Dalit**]{.book-title}
+
+[Yashica Dutt]{.book-author}
+
+[Read: 2023]{.book-year}
+
+[Likely the majority experience in India, such little representation in Indian literature.]{.book-note}
+:::
+::: 
+
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2023_02.jpg)
+:::
+::: {.book-info}
+[**Illustration: What's the Point?: A Book of Illustrated Illustrations that Illustrate Illustration**]{.book-title}
+
+[Mouni Feddag]{.book-author}
+
+[Read: 2023]{.book-year}
+
+[ A book for the soul that sometimes wonders -- what's the point anyway.]{.book-note}
+:::
+:::
+
+::: {.book-card}
+::: {.book-cover}
+![](images/books/book_2023_03.jpg)
+:::
+::: {.book-info}
+[**The Ivory Throne: Chronicles of the House of Travancore**]{.book-title}
+
+[Manu S. Pillai]{.book-author}
+
+[Read: 2023]{.book-year}
+[ Historically important nuances that everybody, especially Dravidians should know about matrilineal culture. ]{.book-note}
+:::
+:::
+

@@ -6,9 +6,9 @@ project:
     - "!story.qmd"
 
 website:
-  title: "Chandniverse"
+  title: "Chandni Naidu"
   site-url: https://chandniverse.github.io
-  
+
   navbar:
     left:
       - href: index.qmd
@@ -19,6 +19,8 @@ website:
         menu:
           - text: "A Visual Story"
             href: story.html
+      - href: bookshelf.qmd
+        text: Bookshelf
       - href: data.qmd
         text: Data & Code
       - href: about.qmd
@@ -26,20 +28,20 @@ website:
     right:
       - icon: github
         href: https://github.com/chandniverse/chandniverse.github.io
-  
+
   sidebar:
     style: floating
     search: true
     contents:
-      - section: "Getting Started"
-        contents:
-          - index.qmd
-          - about.qmd
+      - index.qmd
       - section: "Research"
         contents:
           - analysis.qmd
           - data.qmd
-  
+      - section: "Reading"
+        contents:
+          - bookshelf.qmd
+
   page-navigation: true
   back-to-top-navigation: true
   reader-mode: true

@@ -1,0 +1,75 @@
+/* Custom styles for Chandniverse */
+
+/* ==================== */
+/* GENERAL IMPROVEMENTS */
+/* ==================== */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve readability */
+p {
+  line-height: 1.7;
+}
+
+/* ==================== */
+/* CALLOUTS             */
+/* ==================== */
+
+.callout {
+  margin: 1.5rem 0;
+}
+
+/* ==================== */
+/* CODE BLOCKS          */
+/* ==================== */
+
+pre {
+  border-radius: 8px;
+}
+
+/* ==================== */
+/* TABLES               */
+/* ==================== */
+
+table {
+  margin: 1rem 0;
+}
+
+/* ==================== */
+/* FIGURES              */
+/* ==================== */
+
+figcaption {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* ==================== */
+/* NAVIGATION           */
+/* ==================== */
+
+.quarto-title-block {
+  margin-bottom: 2rem;
+}
+
+/* ==================== */
+/* CITATIONS            */
+/* ==================== */
+
+.citation-hover {
+  font-size: 0.9rem;
+}
+
+/* ==================== */
+/* RESPONSIVE           */
+/* ==================== */
+
+@media (max-width: 768px) {
+  .quarto-title-block h1 {
+    font-size: 1.8rem;
+  }
+}

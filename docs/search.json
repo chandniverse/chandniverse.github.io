@@ -1,0 +1,344 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "This website is built with Quarto and hosted on GitHub Pages. It features my research and design reports, including interactive data visualizations, reproducible analyses, and references.\n\n\n\n\n\n\n\nNote\n\n\n\nThis site is under active development. Check back for updates!\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#about-this-site",
+    "href": "index.html#about-this-site",
+    "title": "Chandni Naidu",
+    "section": "",
+    "text": "This is a research website built with Quarto and hosted on GitHub Pages. It features my research and design reports, including interactive data visualizations, reproducible analyses, and references.",
+    "crumbs": [
+      "Home",
+      "Getting Started",
+      "Chandni Naidu"
+    ]
+  },
+  {
+    "objectID": "index.html#recent-work",
+    "href": "index.html#recent-work",
+    "title": "Home",
+    "section": "Recent Work",
+    "text": "Recent Work\n\nInteractive Analysis\nExplore data with interactive visualizations built using ggplot2 and plotly. See the Analysis page for examples.\n\n\nReproducibility\nAll code and data are available for download. Check the Data & Code section for reproducibility materials.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "Home",
+    "section": "Getting Started",
+    "text": "Getting Started\nNavigate using the menu above or the sidebar to explore different sections of this site.\n\n\n\n\n\n\nNote\n\n\n\nThis site is under active development. Check back for updates!",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data & Code",
+    "section": "",
+    "text": "This page provides all materials needed to reproduce the analyses on this site. All data and code are freely available for download.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data & Code"
+    ]
+  },
+  {
+    "objectID": "data.html#overview",
+    "href": "data.html#overview",
+    "title": "Data & Code",
+    "section": "",
+    "text": "This page provides all materials needed to reproduce the analyses on this site. All data and code are freely available for download.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data & Code"
+    ]
+  },
+  {
+    "objectID": "data.html#datasets",
+    "href": "data.html#datasets",
+    "title": "Data & Code",
+    "section": "Datasets",
+    "text": "Datasets\n\n\n\nDataset\nDescription\nFormat\nDownload\n\n\n\n\nmtcars\nMotor Trend Car Road Tests\nCSV\nDownload\n\n\nExample data\nDemonstration dataset\nCSV\nDownload",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data & Code"
+    ]
+  },
+  {
+    "objectID": "data.html#r-scripts",
+    "href": "data.html#r-scripts",
+    "title": "Data & Code",
+    "section": "R Scripts",
+    "text": "R Scripts\n\n\n\nScript\nDescription\nDownload\n\n\n\n\nanalysis.R\nMain analysis script\nDownload\n\n\nfigures.R\nFigure generation\nDownload\n\n\nutils.R\nHelper functions\nDownload",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data & Code"
+    ]
+  },
+  {
+    "objectID": "data.html#reproducibility-information",
+    "href": "data.html#reproducibility-information",
+    "title": "Data & Code",
+    "section": "Reproducibility Information",
+    "text": "Reproducibility Information\n\nR Session Info\n\n\nR version 4.5.2 (2025-10-31)\nPlatform: x86_64-apple-darwin20\nRunning under: macOS Sonoma 14.5\n\nMatrix products: default\nBLAS:   /Library/Frameworks/R.framework/Versions/4.5-x86_64/Resources/lib/libRblas.0.dylib \nLAPACK: /Library/Frameworks/R.framework/Versions/4.5-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1\n\nlocale:\n[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n\ntime zone: America/New_York\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.5.2    fastmap_1.2.0     cli_3.6.5        \n [5] tools_4.5.2       htmltools_0.5.9   otel_0.2.0        yaml_2.3.12      \n [9] rmarkdown_2.30    knitr_1.51        jsonlite_2.0.0    xfun_0.56        \n[13] digest_0.6.39     rlang_1.1.7       evaluate_1.0.5   \n\n\n\n\nPackage Versions\n\n\n\n\n\n\nPackage\nVersion\n\n\n\n\nggplot2\nggplot2\n4.0.1\n\n\nplotly\nplotly\n4.11.0\n\n\ndplyr\ndplyr\n1.1.4\n\n\nknitr\nknitr\n1.51",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data & Code"
+    ]
+  },
+  {
+    "objectID": "data.html#how-to-reproduce",
+    "href": "data.html#how-to-reproduce",
+    "title": "Data & Code",
+    "section": "How to Reproduce",
+    "text": "How to Reproduce\n\nOption 1: Clone the Repository\ngit clone https://github.com/chandniverse/chandniverse.github.io.git\ncd chandniverse.github.io\nThen open chandniverse.github.io.Rproj in RStudio.\n\n\nOption 2: Download Individual Files\nDownload the specific scripts and data files you need from the tables above.\n\n\nOption 3: Run in R\n# Install required packages\ninstall.packages(c(\"ggplot2\", \"plotly\", \"dplyr\", \"knitr\"))\n\n# Source the analysis script\nsource(\"scripts/analysis.R\")",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data & Code"
+    ]
+  },
+  {
+    "objectID": "data.html#license",
+    "href": "data.html#license",
+    "title": "Data & Code",
+    "section": "License",
+    "text": "License\nAll code is released under the MIT License. Data sources are cited in the respective analysis pages.\n\n\n\n\n\n\nQuestions?\n\n\n\nIf you have trouble reproducing any analysis, please open an issue on GitHub.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data & Code"
+    ]
+  },
+  {
+    "objectID": "books.html",
+    "href": "books.html",
+    "title": "Books",
+    "section": "",
+    "text": "A collection of books I’ve read and would recommend, organized by year.",
+    "crumbs": [
+      "Home",
+      "Reading",
+      "Books"
+    ]
+  },
+  {
+    "objectID": "books.html#section",
+    "href": "books.html#section",
+    "title": "Books",
+    "section": "2025",
+    "text": "2025\n\n\n\n\n\nBook Title Here\nAuthor Name\nRead: January 2025\nYour recommendation note goes here. Why did you enjoy this book? What made it memorable? Who would you recommend it to?",
+    "crumbs": [
+      "Home",
+      "Reading",
+      "Books"
+    ]
+  },
+  {
+    "objectID": "books.html#section-1",
+    "href": "books.html#section-1",
+    "title": "Books",
+    "section": "2024",
+    "text": "2024\n\n\n\n\n\nAnother Book Title\nAnother Author\nRead: December 2024\nYour thoughts on this book and why you’d recommend it.\n\n\n\n\n\n\n\nA Third Book\nThird Author\nRead: August 2024\nWhat you loved about this one.",
+    "crumbs": [
+      "Home",
+      "Reading",
+      "Books"
+    ]
+  },
+  {
+    "objectID": "analysis.html",
+    "href": "analysis.html",
+    "title": "Data Analysis",
+    "section": "",
+    "text": "This page demonstrates interactive data visualization using ggplot2 and plotly. The approach follows best practices for reproducible research (Wickham, 2016; Xie et al., 2018).",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis.html#introduction",
+    "href": "analysis.html#introduction",
+    "title": "Data Analysis",
+    "section": "",
+    "text": "This page demonstrates interactive data visualization using ggplot2 and plotly. The approach follows best practices for reproducible research (Wickham, 2016; Xie et al., 2018).",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis.html#setup",
+    "href": "analysis.html#setup",
+    "title": "Data Analysis",
+    "section": "Setup",
+    "text": "Setup\n\n\nCode\nlibrary(ggplot2)\nlibrary(plotly)\nlibrary(dplyr)",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis.html#interactive-scatter-plot",
+    "href": "analysis.html#interactive-scatter-plot",
+    "title": "Data Analysis",
+    "section": "Interactive Scatter Plot",
+    "text": "Interactive Scatter Plot\nThe following visualization explores the relationship between vehicle weight and fuel efficiency in the mtcars dataset.\n\n\nCode\np &lt;- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl), \n                         text = paste(\"Car:\", rownames(mtcars)))) +\n  geom_point(size = 3, alpha = 0.7) +\n  geom_smooth(method = \"lm\", se = FALSE, linetype = \"dashed\") +\n  scale_color_brewer(palette = \"Set1\") +\n  labs(\n    x = \"Weight (1000 lbs)\",\n    y = \"Miles per Gallon\",\n    color = \"Cylinders\"\n  ) +\n  theme_minimal() +\n  theme(legend.position = \"bottom\")\n\nggplotly(p, tooltip = c(\"text\", \"x\", \"y\"))\n\n\n\n\n\n\n\n\nFigure 1: Interactive scatter plot showing the relationship between weight and MPG, colored by number of cylinders\n\n\n\n\nAs shown in Figure 1, there is a clear negative relationship between vehicle weight and fuel efficiency. Vehicles with more cylinders tend to be heavier and less fuel-efficient.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis.html#distribution-analysis",
+    "href": "analysis.html#distribution-analysis",
+    "title": "Data Analysis",
+    "section": "Distribution Analysis",
+    "text": "Distribution Analysis\n\n\nCode\np2 &lt;- ggplot(mtcars, aes(x = mpg, fill = factor(cyl))) +\n  geom_histogram(binwidth = 2, alpha = 0.7, position = \"identity\") +\n  scale_fill_brewer(palette = \"Set2\") +\n  labs(\n    x = \"Miles per Gallon\",\n    y = \"Count\",\n    fill = \"Cylinders\"\n  ) +\n  theme_minimal()\n\nggplotly(p2)\n\n\n\n\n\n\n\n\nFigure 2: Distribution of MPG values across all vehicles",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis.html#box-plot-comparison",
+    "href": "analysis.html#box-plot-comparison",
+    "title": "Data Analysis",
+    "section": "Box Plot Comparison",
+    "text": "Box Plot Comparison\n\n\nCode\np3 &lt;- ggplot(mtcars, aes(x = factor(cyl), y = mpg, fill = factor(cyl))) +\n  geom_boxplot(alpha = 0.7) +\n  geom_jitter(width = 0.2, alpha = 0.5) +\n  scale_fill_brewer(palette = \"Pastel1\") +\n  labs(\n    x = \"Number of Cylinders\",\n    y = \"Miles per Gallon\",\n    fill = \"Cylinders\"\n  ) +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\nggplotly(p3)\n\n\n\n\n\n\n\n\nFigure 3: Comparison of MPG across different cylinder counts",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis.html#summary-statistics",
+    "href": "analysis.html#summary-statistics",
+    "title": "Data Analysis",
+    "section": "Summary Statistics",
+    "text": "Summary Statistics\n\n\nCode\nmtcars %&gt;%\n  group_by(Cylinders = cyl) %&gt;%\n  summarise(\n    `Mean MPG` = round(mean(mpg), 2),\n    `SD MPG` = round(sd(mpg), 2),\n    `Mean Weight` = round(mean(wt), 2),\n    `N` = n()\n  ) %&gt;%\n  knitr::kable()\n\n\n\n\nTable 1: Summary statistics by cylinder count\n\n\n\n\n\n\nCylinders\nMean MPG\nSD MPG\nMean Weight\nN\n\n\n\n\n4\n26.66\n4.51\n2.29\n11\n\n\n6\n19.74\n1.45\n3.12\n7\n\n\n8\n15.10\n2.56\n4.00\n14",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis.html#sec-methods",
+    "href": "analysis.html#sec-methods",
+    "title": "Data Analysis",
+    "section": "Methods",
+    "text": "Methods\nThe analysis was conducted using R (R Core Team, 2023) with the following packages:\n\nggplot2 for static visualizations (Wickham, 2016)\nplotly for interactive features\ndplyr for data manipulation",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis.html#conclusions",
+    "href": "analysis.html#conclusions",
+    "title": "Data Analysis",
+    "section": "Conclusions",
+    "text": "Conclusions\nThis exploratory analysis reveals several key patterns:\n\nWeight-efficiency trade-off: Heavier vehicles consistently show lower fuel efficiency\nCylinder effect: More cylinders correlate with both higher weight and lower MPG\nVariation: 4-cylinder vehicles show the highest variation in fuel efficiency\n\n\n\n\n\n\n\nReproducibility\n\n\n\nAll code in this analysis is fully reproducible. Download the source files from the Data & Code page.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis.html#references",
+    "href": "analysis.html#references",
+    "title": "Data Analysis",
+    "section": "References",
+    "text": "References\n\n\nR Core Team. (2023). R: A language and environment for statistical computing.\n\n\nWickham, H. (2016). ggplot2: Elegant graphics for data analysis.\n\n\nXie, Y., Allaire, J. J., & Grolemund, G. (2018). R markdown: The definitive guide.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Data Analysis"
+    ]
+  },
+  {
+    "objectID": "bookshelf.html",
+    "href": "bookshelf.html",
+    "title": "Bookshelf",
+    "section": "",
+    "text": "A collection of books I’ve read and would recommend, organized by year.",
+    "crumbs": [
+      "Home",
+      "Reading",
+      "Bookshelf"
+    ]
+  },
+  {
+    "objectID": "bookshelf.html#section",
+    "href": "bookshelf.html#section",
+    "title": "Bookshelf",
+    "section": "2026",
+    "text": "2026\nWelcoming more serendipity in my book choices this year.\n\n\n\n\n\nShe Who Became the Sun\nShelley Parker-Chan\nReading: January 2025\nI seem to be drawn to historic fiction based in East Asia.\n\n\n\n\n\n\n\nIn Every Mirror She’s Black\nLola Akinmade Åkerström\nRead: January 2025\nThree Black women from different places end up in Sweden for different reasons, on different terms, and get to see Swedish society for what it is.",
+    "crumbs": [
+      "Home",
+      "Reading",
+      "Bookshelf"
+    ]
+  },
+  {
+    "objectID": "bookshelf.html#section-1",
+    "href": "bookshelf.html#section-1",
+    "title": "Bookshelf",
+    "section": "2025",
+    "text": "2025\n\n\n\n\n\nTake My Hand\nDolen Perkins-Valdez\nRead: December 2025\nA book that taught me (once again) that fiction and narrative are more powerful tools to grasp the gravity of uncomfortable historic events and social facts.\n\n\n\n\n\n\n\nBest Of Friends\nKamila Shamsie\nRead: December 2025\nGirls everywhere are the same, and ones from the Indian subcontinent are particularly plucky. I enjoyed the stories of two friends in Pakistan, all the way from girlhood in Karachi to rich professional careers in London.\n\n\n\n\n\n\n\nAmericanah: A novel\nChimamanda Ngozi Adichie\nRead: October 2024\nThis book made everything simultaneously better by validating my observations about Americans, and worse by not redeeming them from my already unflattering impression.",
+    "crumbs": [
+      "Home",
+      "Reading",
+      "Bookshelf"
+    ]
+  },
+  {
+    "objectID": "bookshelf.html#section-2",
+    "href": "bookshelf.html#section-2",
+    "title": "Bookshelf",
+    "section": "2024",
+    "text": "2024\n\n\n\n\n\nThe Poppy War\nRebecca F Kuang\nRead: 2024\nA special cross between fantasy, magial realism and historic fiction, such a treat for anybody who enjoys these genres. If you’re unfamiliar with history China, Korea and Japan, you may not make the connections, but if you do, it will be cathartic and poetic, you’ll love how beautifully the story addresses deep, shared wounds.\n\n\n\n\n\n\n\nEm and the Big Hoom\nJerry Pinto\nRead: January 2025\nWe take life as it comes, and we write about it like it will be the most important story ever told.",
+    "crumbs": [
+      "Home",
+      "Reading",
+      "Bookshelf"
+    ]
+  },
+  {
+    "objectID": "bookshelf.html#section-3",
+    "href": "bookshelf.html#section-3",
+    "title": "Bookshelf",
+    "section": "2023",
+    "text": "2023\n\n\n\n\n\nComing Out As Dalit\nYashica Dutt\nRead: 2023\nLikely the majority experience in India, such little representation in Indian literature.\n\n\n\n\n\n\n\nIllustration: What’s the Point?: A Book of Illustrated Illustrations that Illustrate Illustration\nMouni Feddag\nRead: 2023\nA book for the soul that sometimes wonders – what’s the point anyway.\n\n\n\n\n\n\n\nThe Ivory Throne: Chronicles of the House of Travancore\nManu S. Pillai\nRead: 2023 Historically important nuances that everybody, especially Dravidians should know about matrilineal culture.",
+    "crumbs": [
+      "Home",
+      "Reading",
+      "Bookshelf"
+    ]
+  }
+]
