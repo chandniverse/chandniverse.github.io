@@ -1,0 +1,4 @@
+# This applies formatting to all posts
+sidebar: false
+page-layout: article
+title-block-banner: true

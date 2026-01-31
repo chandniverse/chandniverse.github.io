@@ -2,20 +2,24 @@
 title: "About"
 ---
 
-## About This Site
-
-This website is built with [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. It's designed to showcase reproducible research with interactive data visualizations.
-
-## Features
-
-- **Interactive Visualizations**: Built with ggplot2 and plotly
-- **Reproducible Research**: All code and data available for download
-- **Academic Standards**: Proper citations and references
-- **Version Control**: Hosted on GitHub for transparency
-
 ## About the Author
 
-*Add your bio here.*
+Hello, I'm Chandni, a researcher and designer who has spent twelve years moving building tech products, and from the insider experience of knowing how business models are built, I ask uncomfortable questions about them. It's led me to a more critical study technology systems: how platforms govern labor, how fintech reshapes economic institutions, how governments digitize their relationship with citizens.
+
+I'm interested in aspects of tech that get regulated, automated, obscured or even weaponised. My research combines computational methods with political economy frameworks, focused on India and comparative global contexts.
+
+The through-line: I'm drawn to complex systems and the human decisions embedded within them.
+
+I was born and raised in Chennai and have since lived in Delhi, Mumbai, Bangalore, Berlin, Nairobi, and now New York. I'm an insatiably curious person who often finds herself deep in rabbit holes and tries to bring back interesting stories—sometimes as data essays, sometimes as illustrated children's books, sometimes as obsessively detailed digital archives on hyper-specific topics. Hence this website, a digital-garden, an archive of intellectual adventures. 
+
+Outside of tech, I maintain a rotating set of hobbies: printmaking, brush lettering, botanical illustration, designing little apps for friends, volunteering at the local library and public schools. I get excited by good metaphors, unexpected connections, and discovering small acts of thoughtfulness in the built environment.
+
+This site is where I keep my research, writing, past projects, and ongoing experiments. Some of it is polished; some of it is thinking in public, starting conversations. If you're interested in technology and society, design as inquiry, or the occasional well-constructed tangent—welcome. I hope you find something worth staying for.
+
+
+## About This Site
+
+This website is built with [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. It's designed to showcase reproducible research with interactive data visualizations. It also hosts Chandni's blog, which are also likely to contain charts and images. 
 
 ## Technical Details
 
@@ -27,26 +31,9 @@ This website is built with [Quarto](https://quarto.org/), an open-source scienti
 - [plotly](https://plotly.com/r/) - Interactive plots
 - [GitHub Pages](https://pages.github.com/) - Hosting
 
-### Site Structure
-
-```
-chandniverse.github.io/
-├── _quarto.yml          # Site configuration
-├── index.qmd            # Homepage
-├── analysis.qmd         # Analysis page
-├── data.qmd             # Data & code page
-├── about.qmd            # This page
-├── references.bib       # Bibliography
-├── data/                # Datasets
-├── scripts/             # R scripts
-└── docs/                # Rendered site (auto-generated)
-```
 
 ## Contact
 
 - GitHub: [chandniverse](https://github.com/chandniverse)
-- Email: *your email*
+- Email: chandni.naidu@outlook.com 
 
-## Acknowledgments
-
-*Add acknowledgments here.*

@@ -4,6 +4,7 @@ project:
   render:
     - "*.qmd"
     - "!story.qmd"
+    - "posts/**/*.qmd" # NEW: Include all posts
 
 website:
   title: "Chandni Naidu"
@@ -13,34 +14,29 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: analysis.qmd
-        text: Analysis
-      - text: Stories
-        menu:
-          - text: "A Visual Story"
-            href: story.html
+      - href: posts-index.qmd
+        text: Blog
       - href: bookshelf.qmd
         text: Bookshelf
-      - href: data.qmd
-        text: Data & Code
       - href: about.qmd
         text: About
     right:
       - icon: github
         href: https://github.com/chandniverse/chandniverse.github.io
 
-  sidebar:
-    style: floating
-    search: true
-    contents:
-      - index.qmd
-      - section: "Research"
-        contents:
-          - analysis.qmd
-          - data.qmd
-      - section: "Reading"
-        contents:
-          - bookshelf.qmd
+sidebar:
+  contents:
+    - index.qmd
+    - section: "Posts"         # NEW
+      contents:
+        - posts-index.qmd      # NEW
+    - section: "Research"
+      contents:
+        - analysis.qmd
+        - data.qmd
+    - section: "Reading"
+      contents:
+        - bookshelf.qmd
 
   page-navigation: true
   back-to-top-navigation: true

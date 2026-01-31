@@ -1,0 +1,30 @@
+---
+title: "Quarto X GitHub"
+description: |
+  What am I doing here?
+categories: 
+author: CN
+date: 2024-01-31
+image: images/thumbnail.png
+image-alt: "Description for screen readers"
+toc: true
+---
+
+
+This might be it. 
+For man years, I've struggled to leave "platforms" and with every effort to leave, I hurt my self-expression and end up feeling more isolated and less expressed. Maybe I needed to go through those experiences to reaffirm to myself just how important it is that I feel... properly expressed. That I have a space to write, share my art, while also respecting my existential need to not be an inmate in a substack or instagram jail. Communities built on those platforms don't feel like communities, so why would I invest in them? I'm still open to cross-posting, but they absolutely cannot be my primary house for my digital self to reside in. eugh, what a disgustingly low standard that is, to not have your own digital home where you can live on your own terms. Less than 0.1% of individuals have managed to build a digital presence on their terms, and most content creators use platforms that meet their goals, so they're happy to sign away their rights. 
+
+My goals are somewhat different, I might even sound impossible to please.
+- I want to share ideas, journal entries, thoughts, notes from episodes of existential dread, memos from hopeful times, and art that is special to my people because I made it. 
+- I want to see the same from people I care about, whether or not I know them irl.
+- For many people, instagram, substack, twitter, tumblr serve these needs perfectly well. Unfortunately, I'm a technology researcher and with every minute i spend on those platforms, it feels like willingly hanging out in a gas chamber. It's okay if you don't know its a slow-acting gas chamber, you'll maybe even enjoy being lulled into a gentle death. But when you know, it's different. Let's just say survival instinct is very strong. In other words, I need to achieve goals 1 and 2 without using a social media platform.
+- Am I okay with an email-list? I think so, but I'm going to invest in reciprocity. I want my readers to also cultivate their digital rights, so I can be part of their lives on dignified terms.
+- I write long-form text, but I also write a lot of charts, data visualizations. It's part of my thinking process. 
+
+After bumbling around in the weeds of the internet, testing several tools that cleverly disguise the fact that they're platforms, I've decided that I'm comfortable hosting my content on GitHub (yes, I know Microsoft owns it, it's very much a platform, but I'm free to move my content anywhere anytime without being trapped, so this works for me) I will pay for my domain, and when I die and my credit card doesn't work anymore, my content will continue to live in my github universe, chandniverse.github.io
+
+Last year, when I was actively in a job search, I felt the pressure to neatly compartmentalise my professional persona from my other dimensions, but I'm not feeling that pressure anymore. I also know that the next job(s) that I might pursue will be the kinds where having an authentic digital personality will be a sign of good-fit. 
+
+So here it is, my new home. No launch parties, I'm going to quietly push this commit and leave it here for when somebody gets curious at some point - why does she write here? Like this? 
+
+Well, now you know. 
