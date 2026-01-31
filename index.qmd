@@ -23,7 +23,7 @@ Previously:
 Design Manager at Aspire ($15B TPV fintech), research lead on financial inclusion in Indonesia, design faculty, and founder of an edtech startup. Masters in HCI from IIT Bombay, MicroMasters from MIT Economics.
 
 
-On this website, I write data essays, dive into rabbit holes, and collect evidence of thoughtfulness in built environments.
+On this website, I write data essays, deep-dives, and observational notes.
 
 [More about me](https://chandniverse.github.io/about.html)
 

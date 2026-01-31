@@ -4,7 +4,7 @@ title: "About"
 
 ## About the Author
 
-Hello, I'm Chandni, a researcher and designer who has spent twelve years moving building tech products, and from the insider experience of knowing how business models are built, I ask uncomfortable questions about them. It's led me to a more critical study technology systems: how platforms govern labor, how fintech reshapes economic institutions, how governments digitize their relationship with citizens.
+Hello, I'm Chandni, a researcher and designer who has spent twelve years building tech products, and from the insider experience of knowing how business models are built, I ask uncomfortable questions about them. It's led me to a more critical study of technology systems: how platforms impact labor, how fintech reshapes economies, how governments digitize their relationship with citizens.
 
 I'm interested in aspects of tech that get regulated, automated, obscured or even weaponised. My research combines computational methods with political economy frameworks, focused on India and comparative global contexts.
 
@@ -19,7 +19,7 @@ This site is where I keep my research, writing, past projects, and ongoing exper
 
 ## About This Site
 
-This website is built with [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. It's designed to showcase reproducible research with interactive data visualizations. It also hosts Chandni's blog, which are also likely to contain charts and images. 
+This website is built with [Quarto](https://quarto.org/), an open-source scientific and technical publishing system. It's designed to showcase reproducible research with interactive data visualizations. It also hosts my blog, which is also likely to contain charts and images. 
 
 ## Technical Details
 
