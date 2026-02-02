@@ -1,37 +1,39 @@
 ---
-title: "Quarto X GitHub"
+title: "Scales of Sociological Theory"
 description: |
-  What am I doing here?
+  Finding my research niche
 categories: 
 author: CN
-date: 2026-01-31
+date: 2026-02-01
 image: images/thumbnail.png
 image-alt: "Description for screen readers"
 toc: true
 ---
 
-This might be it.
+Attempting to draw some lines in the academic sphere, within which I can get cozy, dive deeper, attempt to keep up with everything within those bounds, largely to stop myself from pursuing every shiny object.
 
-For many years, I've struggled to leave "platforms" and with every effort to leave, I hurt my self-expression and end up feeling more isolated and less expressed. Maybe I needed to go through those experiences to reaffirm to myself just how important it is that I feel... properly expressed. That I have a space to write, share my art, while also respecting my existential need to not be an inmate in a substack or instagram jail. Communities built on those platforms don't feel like communities, so why would I invest in them?
+This writing exercise is going to sound unusually precise for such an early-career researcher, but I have enough professional experience that "early-career" doesn't strictly apply to me. My approach to building a research career is naturally going to be different from that of a twenty year old who's going straight from high school to college to grad school. For one, I'm going to be aggressively focused on what I want, and may not be as interested in exploratory experiences. There's a trade-off, but I'm working with limited time resources, so I know exactly what type of researcher I want to be in a few years from now. In other words, I don't have the luxury of not knowing.
 
-I'm still open to cross-posting, but they absolutely cannot be my primary house for my digital self to reside in. eugh, what a disgustingly low standard that is, to not have your own digital home where you can live on your own terms. Less than 0.1% of individuals have managed to build a digital presence on their terms, and most content creators use platforms that meet their goals, so they're happy to sign away their rights.
+In terms of methods, I've learnt very quickly that I cannot rely on fieldwork being a core part of my work. I live in the US, and my interests are all in South Asia. Unless I work with local partners (funding?) I have to be careful not to make this central to my research. Luckily, I have strong computational and data skills, and now need to hone my statistical skills to potentially be a quantitative researcher with qualitative interpretive skills.
 
-My goals are somewhat different, I might even sound impossible to please.
+Quant was generally not so exciting to me because I as expecting this path to lead to lots of empirical work, and not enough strength in theory-building. Or perhaps I was looking in the wrong circles. I have since come to understand that quantitative researches in the social sciences are given an extra touch of credibility in their theoretical interpretations because their ideas are oh-so-empirical. From where I stand, I may as well recognize the playing ground and prepare to leverage it.
 
-1.  I want to share ideas, journal entries, thoughts, notes from episodes of existential dread, memos from hopeful times, and art that is special to my people because I made it.
+So far, this means my methods scope is limited to quantitative methods. Great to have this clarity. I can spend a lot of time learning more about the nuances of quant methods in the social sciences.
 
-2.  I want to see the same from people I care about, whether or not I know them irl.
+There are many other parameters of scope definition I'm going to find useful to put in place earlier than later. I'm interested in anything technology x society, and excited by the effects on gender, labour, economics. Particularly, I'm drawn to studying the extent and limits of government power to regulate tech, not to mention how governments themselves leverage or weaponize tech policy.
 
-3.  For many people, instagram, substack, twitter, tumblr serve these needs perfectly well. Unfortunately, I'm a technology researcher and with every minute i spend on those platforms, it feels like willingly hanging out in a gas chamber. It's okay if you don't know its a slow-acting gas chamber, you'll maybe even enjoy being lulled into a gentle death. But when you know, it's different. Let's just say survival instinct is very strong. In other words, I need to achieve goals 1 and 2 without using a social media platform.
+The fascinating thing about sociology is that you get to study the intra-personal, inter-personal, micro, meso and macro dimensions of nearly any phenomenon, and they're all going to enrich theory-building. Here, I enjoy making connections across the whole range, and don't necessarily want to pick a specific scale, but if I had to, I'd pick international relations. What is that, more macro than macro?
 
-4.  Am I okay with an email-list? I think so, but I'm going to invest in reciprocity. I want my readers to also cultivate their digital rights, so I can be part of their lives on dignified terms.
+Restating these thoughts in more material terms in the next section:
 
-5.  I write long-form text, but I also write a lot of charts, data visualizations. It's part of my thinking process. I needed a CMS that supports that range, hence Quarto. Substack could never!
+I want to study how digital technologies reshape economic life and institutional power, particularly in the majority world. My current focus is on India, though I'm drawn to comparative global work that puts different contexts in conversation. It's very clarifying for me to explicitly call out where I want to develop scholarship.
 
-After bumbling around in the weeds of the internet, testing several tools that cleverly disguise the fact that they're platforms, I've decided that I'm comfortable hosting my content on GitHub (yes, I know Microsoft owns it, it's very much a platform, but I'm free to move my content anywhere anytime without being trapped, so this works for me) I will pay for my domain, and when I die and my credit card doesn't work anymore, my content will continue to live in my github universe, chandniverse.github.io
+**Substantive areas:** platform labor and algorithmic management, fintech and the digitization of financial services, government technology and citizen-state relations, the political economy of automation. I'm especially interested in how regulatory frameworks struggle to keep pace with technological change, and who wins and loses in that gap.
 
-Last year, when I was actively in a job search, I felt the pressure to neatly compartmentalise my professional persona from my other dimensions, but I'm not feeling that pressure anymore. I also know that the next job(s) that I might pursue will be the kinds where having an authentic digital personality will be a sign of good-fit.
+**Methods:** I'm comfortable with computational approaches (working with large datasets, building scrapers, quantitative analysis) and spend a lot of time thinking about how to pair these with interpretive frameworks. I can work with qualitative data, but I'm not currently doing ethnographic fieldwork. Open to online interviews and remote methods when human subjects research is needed.
 
-So here it is, my new home. No launch parties, I'm going to quietly push this commit and leave it here for when somebody gets curious at some point - why does she write here? Like this?
+**What I want to learn more about:** comparative institutional analysis, deeper engagement with STS and economic sociology theory, sharper quantitative skills for causal inference, and how to write for both academic and public audiences without losing rigor in either.
 
-Well, now you know.
+**What I bring:** twelve years of industry experience (fintech, edtech, design leadership), fluency in moving between building things and critiquing them, and a genuine obsession with understanding how systems actually work beneath the surface.
+
+I didn't know what I'd get out of this writing exercise, but looks like I've just written myself a scope document for doctoral studies, or a research manifesto, if you'll permit me some romanticism.
