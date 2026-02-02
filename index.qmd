@@ -17,10 +17,10 @@ listing:
 
 Welcome to my website. 
 
-I'm a designer and researcher, I study how technology reshapes the relationship between people, institutions, and power—particularly in fintech, platform labor, and government service delivery. My work sits at the intersection of sociology, design, and political economy, with a focus on India and the majority world.
+I'm a designer and researcher, I study how technology reshapes the relationship between people, institutions, and power—particularly in fintech, platform labor, and government service delivery. My work sits at the intersection of sociology, technology studies, and political economy, with a focus on India and the majority world.
 
 Previously: 
-Design Manager at Aspire ($15B TPV fintech), research lead on financial inclusion in Indonesia, design faculty, and founder of an edtech startup. Masters in HCI from IIT Bombay, MicroMasters from MIT Economics.
+Design Manager at Aspire ($15B TPV fintech), research lead on financial inclusion in Indonesia, design faculty, and founder of an edtech startup. Masters in HCI from IIT Bombay, MicroMasters in Data, Economics and Design of Policy, from MIT Economics.
 
 
 On this website, I write data essays, deep-dives, and observational notes.

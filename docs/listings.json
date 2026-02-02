@@ -2,13 +2,15 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/2026/01/31/post-1.html"
+      "/posts/2026/01/31/post-1.html",
+      "/posts/2026/02/01/post-1.html"
     ]
   },
   {
     "listing": "/posts-index.html",
     "items": [
-      "/posts/2026/01/31/post-1.html"
+      "/posts/2026/01/31/post-1.html",
+      "/posts/2026/02/01/post-1.html"
     ]
   }
 ]
